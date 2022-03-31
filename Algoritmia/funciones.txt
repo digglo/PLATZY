@@ -1,0 +1,20 @@
+FUNCIONES: bloques de codigo que realizan una actividad especifica
+
+SIRVEN PARA:
+ORGANIZAR
+OPTIMIZAR
+MODULAR
+
+RECOMENDACIONES (los nombres de las funciones deben ser desciptivos o claros sobre para que sirve o hace)
+
+las funciones pueden recibir valores del alrrededor, y se reciben para operarlos
+
+function suma (valor 1, valor 2){
+
+   return valor 1+valor 2;
+
+}
+
+LLAMADA DE LA FUNCION
+
+suma (2,1);

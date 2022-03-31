@@ -1,0 +1,4 @@
+METODO: Es una funcion que hace parte de un objeto
+
+ATRIBUTO O PROPIEDAD: Variable de un objeto
+

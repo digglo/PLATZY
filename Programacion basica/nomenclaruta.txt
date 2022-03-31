@@ -1,0 +1,3 @@
+VARIABLE O FUNCIIONES: se escribe asi variableA
+
+CONSTANTES: se escriben solamente en mayusculas

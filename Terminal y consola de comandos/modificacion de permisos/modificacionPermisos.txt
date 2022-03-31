@@ -1,0 +1,25 @@
+DAR PERMISOS
+CHMOD permisos en modo octal o numerico y el nombre del archivo
+
+chmod 755 texto.txt 0 chmod U=w,go-r texto.txt
+(el 7 esta ubicado en usuario, y los otros 2 cincos estan en global y otros)
+
+QUITAR PERMISOS:
+
+CHMOD U-R TEXTO.TCT
+con este comando se le quitan los permiso al usuario
+
+CAMBIAR SE USUARIO:
+
+SU: su root (su para cambiar el usuario y el ROOT para elegir el usuario al que se cambia)
+-esta configuracion pide que se le asigne una contraseña
+
+SUDO: No loguea como root pero da los permisos de root (sirve para borrar los archivos de otros usuarios)
+
+CAMBIAR CONTRASEÑA:
+
+PASSW:Sirve para cambiar la contraseña
+
+RECOMENDACIONES:
+
+MI CONTRASEÑA Y LA DEL USUARIO ROOT DEBEN SER DIFERENTES

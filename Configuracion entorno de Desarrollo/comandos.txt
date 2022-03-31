@@ -1,0 +1,20 @@
+CAT: Muestra los contenidos dentro de un archivos
+
+SUDO APT/-GET UPDATE: sirve para ver que actualizaciones hay
+
+SUDO APT-GET UPGRATE: para instalar las actualizaciones
+
+SUDO APT-INSTALL + APLICACION A INSTALAR
+
+NPM: Sirve para instalar paquetes de forma permanente
+
+NPX: Ejercutar paquetes de internet
+
+
+COMANDOS GIT:
+
+BORRAR REPOSITORIO O ARCHIVO: RM + nombre
+
+GIT ADD . : Agrega todos los archivos
+
+CONTROL+X:Para cerrar la pantalla si no se coloca un comentario en el commit

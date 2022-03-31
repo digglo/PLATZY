@@ -1,0 +1,27 @@
+Cajero electrónico
+Qué variables necesito para llevar a cabo el funcionamiento de un cajero automático en el cual
+solo realizaré la acción de sacar dinero en efectivo.
+
+RTA: cuenta-saldo-almacenado-cantidad retiro
+
+Usar un chat
+Qué variables debo tener en cuenta para hablar con un amigo a través de una aplicación de
+mensajería instantánea, teniendo en cuenta que solo le puedo enviar mensajes si está conectado
+a la aplicación.
+
+RTA: conexion-chat-texto-entrega
+
+Pagar con tarjeta de crédito
+Estás en la caja de un supermercado y necesitas realizar el pago de tus productos usando una tarjeta de crédito porque es el único medio de pago que reciben. ¿Qué variables necesitas?
+
+RTA: existencia-saldo-dispositivo-validacion-consignacion
+
+Lavar la ropa
+Necesitas lavar tu ropa, pero debes tener en cuenta los diferentes factores que necesitarás para llevar a cabo esta tarea. ¿Tienes lavadora? ¿Lo harás a mano? ¿Qué necesitas?
+
+RTA: hay ropa sucia-tipo de ropa-color-a mano-hay lavadora-lavar en lavadora- lavar a mano
+
+Hablar por teléfono
+Es momento de llamar a un amigo por teléfono, debes tener en cuenta varios puntos importantes: ¿Tienes teléfono? ¿Está tu amigo disponible? ¿Qué necesitas para realizar esta llamada?
+
+RTA: tener telefono-tener amigo-conexion-recepcion de llamada

@@ -1,0 +1,57 @@
+DEVTOOLS:
+se utiliza para debugguear y validar el codigo desde cierta linea de codigo
+
+COMO ACCEDER (CONTROL-SHIFT-I)
+
+VSCODE: COMO ABRIR EXTENSIONES
+(CONTROL+SHIFT+X)
+
+- se recomienda instalar PRETTIER para mejorar la forma en que se visualiza el codigo
+
+- se recomienda COLOR HIGHLIGHT el cual pone un recuadro a los estilos que se colocan en el sitio WEB
+
+- se recomienda LIVESERVER sirve para cargar los archivos en el navegador al mismo tiempo que se va
+  guardando el codigo
+
+- se recomienda PATHINTELLISENSE sirve para auto completar las rutas de imagenes
+
+- se recomienda AUTO RENAME TAG si se cambia una tag me cambia tambien el otro que tiene ligado
+
+- se recomienda MATERIAL ICON THEME muetra el INCONO del lenguaje que se esta manejando
+
+WINDOWS SUBSISTEM FOR LINUX
+
+PARA ABIR PANTALLA DE EJECUTAR oprimir WINDOWS+R que abre la pantalla de EJECUTAR, para abrir el CMD
+
+1) Como instalar: se debera buscar el powersheld y se debera copiar la linea de codigo de que se
+que se encuentra en la pagina de WINDOWS SUBSISTEM FOR LINUX y se instalan primero los features
+
+2)luego se activa la maquina virtual pegando el codigo 
+
+3)luego se coloca WINDOWS SUBSISTEM FOR LINUX como version por defecto pegando el codigo de la pagina
+
+4)posteriormente se descarga linux(RECOMENDABLEMENTE UBUNTU) y WINDOWS terminal
+
+CONFIGURACION WINDOWS SUBSISTEM FOR LINUX:
+
+1)entramos a ubuntu y colocamos el nombre de Usuario, una contraseña 
+
+CONFIGURACION:
+
+-COMO CONECTAR UBUNTU A GIT
+SSH-KEYGEN -T RSA -B 4096 -C "aqui va el correo": con esto se genera una llave o token para pasarcelo a 
+GITHUB para que reconosca UBUNTU
+
+-Luego se coloca EVAL $"(SSH-AGENT -S)"
+
+-luego SSH-COPY ID "nombre del correo"
+
+-Posteriormente nos dirigimos a donde quedo guardada la llave colocando CD -/.SSH
+
+-luego se abre el archivo donde esta la llave con CAT y se copia todo el contenido, para luego pegarlo
+como si fuera codigo
+
+-posteriormente nos vamos a GITHUB-a setting- luego a SSH AND GPG KEYS
+
+
+

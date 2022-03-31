@@ -1,0 +1,41 @@
+OBJETO:
+
+Se utiliza cuando algo tiene varias variables adentro, o contiene varias caracteristicas
+
+MOSTRAR ALGO DE UN OBJETO (COMO UNA IMAGEN):
+se utiliza objeto.body.appendChild();
+
+-Se coloca el bodu para indicar donde se va a colocar el atributo 
+
+RECOMENDACIONES:
+Si varios objetos obtienen las mismas caracteristicas, es mejor crear un solo objeto y agruparlo 
+todo es un solo objeto, con la ayuda de arrays
+
+Crear un solo archivo para declarar los objetos y otro donde otro donde estara creada la clase
+y las funciones
+
+ACLARACIONES:
+-se pueden agregar objetos sin declaraslos desde un inicio en la variable ejemplo
+
+var casa = {
+
+  carro = "carro",
+  paredes = "paredes"
+
+}
+
+casa.habitacion = 1;
+
+-a niguna variable o objeto se le puede cambiar el atributo, si es int es int, si es text es text
+
+var casa = {
+
+  carro = "carro",
+  paredes = "paredes"
+
+}
+
+* es un objeto
+
+* casa = new image() esto cambia la variable o objeto, asi que generar error 
+

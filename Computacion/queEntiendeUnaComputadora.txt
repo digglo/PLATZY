@@ -1,0 +1,25 @@
+que ocurre dentro de la computadora:
+procesan una mescla de 0 y 1 (un bit), como funciona este sistema binario la primera posicion vale 1
+y se va multiplicando por 2 cada vez para los numeros y para letras cada letra tiene un valor numerico
+asi que en el sistema binario seria una mezcla de 0 y 1 que de el valor numerico de la letra
+
+Sotware: 
+serie de instrucciones que se le dan al computador, y el flujo es de primero un INPUT(Una entrada), un
+CPU y una MEMORIA(se encargan de comunicar, almacenar y procesar la informacion)
+
+CPU:(Unidad central de procesamiento)
+procesa todas las operaciones que ocurren en la computadora
+
+GPU:(Unidad grafica de procesamiento)
+hay 2 tipos GPU INTEGRADO( un pequeño procesador de graficos) y se encarga que el computador pueda 
+mostrar una pantalla, reproducir un video, etc; y GPU DISCRETO targetas grandes (son para computadoras
+de videojugos)
+
+ALMACENAMIENTO:(DISCO DURO)
+estado solido
+
+MEMORIA RAM: 
+donde se almacena toda la informacion temporal de la computadora
+
+TIPO DE PANTALLA:
+resolucion

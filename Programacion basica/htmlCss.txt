@@ -1,0 +1,6 @@
+HTML: Es para estruturar la informacion
+
+CSS: Es para diseñar la informacion
+
+JAVASCRIPT: Es para dar interactividad para esta informacion
+

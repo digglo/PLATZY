@@ -1,0 +1,19 @@
+VIM: Es un vi pero moderno
+pasa salir de VIM se utiliza :q
+
+
+ESCRIBIR EN VIM:
+se oprime ENTER O i para escribir en VIM
+
+ESC: paranavegar en VIM o para escribir comandos de VIM
+
+COMANDO /palabra: filtro de busqueda en VIM
+
+
+
+ELIMINAR EN VIM:
+toca colocarse al inicio de la linea y se oprime 2 veces la tecla D
+
+
+GUARDAR EN VIM:
+ESC :W, este comando es para guardar lo escrito en VIM

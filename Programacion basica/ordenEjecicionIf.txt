@@ -1,0 +1,5 @@
+el if maneja un orden y el primer if que se coloque es el primero que se ejecuta, el segundo el
+segundo que se ejecuta
+
+EJEMPLO:
+Para visualizarlo en villa,js cambie el if de fondo y coloquelo despues del if de vaca

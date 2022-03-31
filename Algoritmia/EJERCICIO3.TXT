@@ -1,0 +1,54 @@
+Venta de tiquetes
+En una empresa de viajes se requiere realizar la venta de tiquetes teniendo en cuenta las siguientes 
+consideraciones:
+
+Cada tiquete incluye ciudad de origen, ciudad de destino, fecha, hora, cantidad de puestos y datos del
+pasajero.
+
+Cada autobús o avión tiene una capacidad máxima de pasajeros, debo avisar cuando se hayan llenado los
+cupos.
+
+Debes asignar los puestos de cada medio de transporte conforme al orden de compra.
+
+function ticket(ciudad origen, ciudad destino, fecha, hora, puesto, datos){
+
+       while(puesto<=10){
+
+            let consolidado = datos.id;
+            return datos.id = datos.id+1;
+            if (datos.id>consolidado){
+
+               let ticket = 0;
+               return ticket = ticket +1;
+
+               imprimir ticket
+                        datos.nombre 
+                        datos.id.
+                        ciudad destino
+                        ciudad origen
+                        fechahora
+
+            }else{
+
+             "el ticket ya esta creado2
+
+            }
+            
+
+       }
+
+}
+
+let datos = new objet();
+
+datos.nombre = "camilo"
+datos.id = 1;
+datos.CC = 10101010;
+
+alert("quedan, puesto, disponibles");
+
+Toma de pedidos
+Se desea automatizar la toma de pedidos en un restaurante. El pedido debe llegar a la cocina 
+indicando la información de la mesa a la que se le tomó el pedido, el nombre del cliente, 
+los productos que solicitó, la cantidad y la fecha y hora. Cada pedido debe ser despachado en el orden
+en que fue tomado.

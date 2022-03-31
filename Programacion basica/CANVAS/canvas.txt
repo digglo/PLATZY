@@ -1,0 +1,2 @@
+canvas (<canvas>) es un elemento de HTML que se utiliza para dibujar gráficos a 
+través de comandos mediante un lenguaje de programación.

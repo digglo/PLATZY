@@ -1,0 +1,5 @@
+lolcat: sirve para colcar colores a un texto
+
+Sirve para que se redirija a un comando a realizar al mismo tiempo y esto por medio de | el cual 
+representas los pipe'saber
+

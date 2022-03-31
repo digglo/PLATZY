@@ -1,0 +1,13 @@
+SE INSTALA UN EMULADOR DE TERMINAR (RECOMENDACION:TILIX)
+
+LUEGO SE DEBE IR A https://github.com/romkatv/powerlevel10k y aqui se instala el paquete
+
+
+
+CAMBIAR SHELL:
+CHSH -S $(which zsh)($ es para que ejecute otro comando y el which para buscar la rita de ZSH)
+
+y luego se oprime 0
+
+
+

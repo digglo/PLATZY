@@ -1,0 +1,43 @@
+DEFINIR VARIABLES JAVASCRIPT:
+let: tiene un alcance bloque, quiere decir que se puede accerder a esta variable desde cierta linea de
+codigo hasta otra cierta linea de codigo
+
+var: tiene un alcance global, quiere decir que se puede acceder a esta variable desde cualquier linea
+de codigo
+
+const: es una variable que ninca cambia y es global
+
+DEFINIR UNA FUNCION JAVASCRIPT:
+se utiliza FUNCTION
+
+PROCESO DEBUGGIN JAVASCRIPT:
+se utiliza console.log() y dentro de los parentesis  se coloca el valor que va a mostrar cuando 
+ejecute la aplicacion
+
+
+
+
+
+DEFINIR VARIABLE PHP:
+$:se definen las variables con un signo de pesos
+
+DEFINIR UNA FUNCION PHP:
+se utiliza FUNCTION, pero se puede definir se es publica, privada o estatica
+
+PROCESO DEBUGGIN PHP:
+se puede utilizar ECHO, aunque la preferible es PRINT_R para imprimir lo que se traiga
+
+
+
+
+
+DEFINICION VARIABLE PYTHON:
+se definen simplemente nombrandolas 
+ejemplo: hola = hola
+
+
+DEFINIR UNA FUNCION PYTHON:
+se utiliza DEF y lugo va el nombre de la FUNCION
+
+PROCESO DEBUGGIN PYTHON:
+se puede utilizar la libreria pdb en donde se pueden crear breckpoints

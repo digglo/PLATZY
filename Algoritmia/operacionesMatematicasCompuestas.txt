@@ -1,0 +1,8 @@
+Varias operaciones en una sola
+
+GERARQUIA:
+
+-PRIMERO: Parentesis
+-SEGUNDO: Potencias y Raices
+-TERCERO: Division y Multiplicacion
+-CUARTO: Suma y Resta

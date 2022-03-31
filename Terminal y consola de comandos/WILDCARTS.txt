@@ -1,0 +1,16 @@
+Serie de caracteres especiales que permiten realizar buscar especializadas
+
+ls *-txt: Me buscar y me muestras todos los archivos que terminen con texto
+
+ls datos*: Trae todos los archivos que comiencen con datos y no importa que venga despues
+
+ls datos?: Sirve para buscar los documentos que empiecen con datos y solo tenga un caracter despues
+
+ls [[:upper:]]*:Sirve para filtrar los archivos que comiencen con mayusculas
+
+ls -d [[:upper:]]; Sirve para filtrar solo carpetas que comiencen con mayusculas
+
+ls [[:lower:]]*:Sirve para filtrar los archivos que comiencen con minuscula
+
+ls [ad]*: Buscar archivos que comiencen con a o datos
+

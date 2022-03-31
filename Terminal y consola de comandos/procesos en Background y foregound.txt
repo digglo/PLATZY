@@ -1,0 +1,22 @@
+BACKGROUND:
+Cuando un proceso está en ejecución sin que sea mostrado en la terminal se dice que se está 
+ejecutando en el background
+
+FOREGROUND:
+Si se muestra la ejecución del comando dentro de la terminal se dice que está en el foreground.
+
+CTRL+D: Para terminar un input y guardar
+CTRL+Z: Para suspender un proceso (con esto se mueven procesos a BACKGROUND)
+
+PASAR DE UN PROCESO BACKGROUND A FOREGROUND
+1)fg %y el numero de proceso que esta en BACKGROUND (este numero se muestra despues de oprimir CTRL+Z)
+(el % para realizar la llamada del proceso)
+EJEMPLO:
+fg %1
+
+2) & este proceso de control lleva directamente a background
+EJEMPLO: MiNota.txt $
+
+3)bg es lo mismo que el fg % solo que pare enviar a background
+
+

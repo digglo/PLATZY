@@ -1,0 +1,9 @@
+if (x<20){
+
+ return "se logro"
+
+}else {
+
+  return "no se logro"
+
+}

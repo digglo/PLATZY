@@ -1,0 +1,67 @@
+Ejercicio 1: Directorio telefónico
+Necesitas almacenar tus contactos en una aplicación, para cada uno necesitas: nombre, número telefónico y
+correo electrónico.
+
+RTA: NOMBRE: STRIG
+     TELEFONO: INT
+     CORREO: STRING
+     EXISTE: BOOLEAN
+     BASE DE CONTACTOS: ARRAY
+
+Ejercicio 2: Generando facturas
+En tu negocio necesitas emitir facturas que indiquen el nombre del cliente, número de identificación, 
+teléfono, dirección, nombre del producto o servicio, cantidad, valor unitario, valor total por cada
+ producto y valor total a pagar.
+
+RTA: REALIZACION COMPRA: BOOLEAN
+     CEDULA: LONG
+     TELEFONO: INT
+     DIRECCION: STRING
+     NOMBRE CLIENTE: STRING
+     NOMBRE PRODUCTO: STRING
+     VALOR PRODUCTO: INT
+     CANTIDAD PRODUCTO: INT
+     VALOR TOTAL: INT
+     FORMA DE PAGO: STRING
+
+Ejercicio 3: Control de paso vehicular
+En la carretera necesitas controlar el paso de vehículos por una zona determinada. La condición 
+es el pago del servicio; si este se realizó puede pasar, en caso contrario no podrá continuar.
+
+RTA: TIPO VEHICULO: STRING
+     PESO VEHICULO: INT
+     VALOR TIPO VEHICULO: INT
+     UBICACION CONTROL: STRING
+     PASO: BOOLEAN
+
+Ejercicio 4: Agenda personal
+Debes controlar tus compromisos de cada día, para esto realiza una agenda digital que permita
+mostrar tus espacios de tiempo disponibles y al seleccionar un espacio disponible se solicita 
+nombre, correo electrónico y motivo del agendamiento.
+
+RTA: TIPO ACTIVIDAD: STRING
+     NOMBRE: STRING
+     CORREO: STRING
+     MOTIVO: STRING
+     HORA A REALIZAR: INT
+     DURACION: INT
+     OCUPASO: BOOLEAN
+     DISPONIBILIDAD:
+
+Ejercicio 5: Sistema de parqueadero
+En un parqueadero de bicicletas debes validar si un espacio está vacío, en caso que sea verdadero 
+debes permitir parquear tu bicicleta y almacenar la fecha y hora en la cual fue parqueada para así
+generar el cobro por minutos. Al finalizar el uso del espacio, debes tomar la fecha y hora nuevamente 
+para calcular cuánto pagarás, teniendo en cuenta que cada minuto que estuvo parqueada costó $1.
+
+RTA: FECHA ENTRADA: INT
+     FECHA SALIDA: INT
+     HORA ENTRADA: INT
+     HORA SALIDA: INT
+     VALOR POR MINUTO: INT
+     NOMBRE DUEÑO: STRING
+     CEDULA DUEÑO: INT
+     PLACA BICICLETA: STRING
+     ESPACIO: BOOLEAN
+     UBICACION: INT
+     

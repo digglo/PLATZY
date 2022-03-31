@@ -1,0 +1,24 @@
+OPERADORES DE CONTROL:
+
+Simbolos reservados por la terminal que nos permiten ejecutar mas de un comando o encadenarlo (se 
+ejecutan asicronamente y sincronamente o con condicionales), y se ejecutan en el orden declarado
+
+EJEMPLOS:
+
+SINCRONO
+ls; mkdir holi; cal
+
+ASINCRONO:
+ls % date $ cal 
+(ejecuta cada comando en una nueva terminar pero sin salir de la terminal principal 
+y luego muestras en que tiempos se ejecutaron los comandos en las diferentes terminales que fueron
+necesarios)
+
+CONDICIONAL:
+mkdir test && cd test 
+(si se crea el directorio quiero que me lleve al directorio)
+(si la primera condicion no se cumple no puede ejecutar las siguientes a menos que se utilice ||)
+
+&& = y
+|| = 0
+

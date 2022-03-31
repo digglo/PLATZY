@@ -1,0 +1,29 @@
+COMO CREAR ACCESOS DIRECTOS DESDE LA TERMINAL:
+
+LN -S COLOCA LA RUTA DEL ACCESO DIRECTO Y EL NOMBRE DE LA RUTA 
+
+ln -s DOCUMENTS/PLATZY PLATZY
+
+
+
+
+PRINTENV: (MUESTRA TODAS LAS VARIABLES DE ENTORNO)
+
+
+COMO IMPRIMIR UNA VARIABLE DE ENTORNO:
+-ECHO $ Y EL NOMBRE DE LA VARIABLE
+
+echo &home (NOS DICE DONDE ES EL HOME DE NUESTRO USUARIO)
+
+-ECHO $PATH (Contiene todas las rutas de los binarios que ejecutan comandos en el sistema)
+
+
+MODIFICAR VARIABLES DE ENTORNO:
+ls -la(muestra varios archivos y el principal es .bashrc para windows para MAC .zshrc)
+y luego toca abrir .bashrc con code (CODE .bashrc) y luego se vuelve a cargar bash simplemente colocando
+bash
+
+para agregar el binario o el manejador de paquetes(NODE O PARECIDOS), se coloca:
+PATH=$PATH:RUTA
+PATH=$PATH/HOME/REINACC
+

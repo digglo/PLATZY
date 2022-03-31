@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu peso en marte</title>
+</head>
+<body>
+    
+  <h1>Tu peso en otro planeta</h1>
+  <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+
+  <script>
+
+    let planeta = prompt("en que planeta quieres saber tu peso, Marte o Jupiter");
+
+    switch(planeta){
+
+      case "marte": 
+        
+        let peso = parseFloat(prompt("cuanto pesas"));
+        let gravedad = 9.8;
+        let gravedadMarte = 3.7;
+        let pesoFinal;
+
+        pesoFinal = (peso*gravedadMarte)/gravedad;
+
+        document.write("tu peso en marte es <strong>" + pesoFinal + "</strong>");
+
+      break;
+
+      case "jupiter":
+        
+        let peso1 = parseFloat(prompt("cuanto pesas"));
+        let gravedad1 = 9.8;
+        let gravedadJupiter = 24.8;
+        let pesoFinal1;
+
+        pesoFinal1 = (peso1*gravedadJupiter)/gravedad1;
+
+        document.write("tu peso en marte es <strong>" + pesoFinal1 + "</strong>");
+      break;
+
+    }
+
+  </script>
+
+</body>
+</html>

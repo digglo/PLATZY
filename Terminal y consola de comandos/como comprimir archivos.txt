@@ -1,0 +1,20 @@
+TAR (FORMATO DE COMPRIMIR):
+tar -cvzf y nombre del archivo comprimido y la carpeta donde comprimir 
+(-c para comprimir ) (v para que muestre un output en la terminal) (z para comprimir en GZ al mismo tiempo)
+(F para indicar que son archivos)
+
+tar -cvf TOcompress.TAR TOcompress
+
+DESCOMPRIMIR: 
+tar -xzvf TOcompress.TAR.GZ
+
+
+
+ZIP:
+zip -r TOcompressInZip.zip TOcompress (-r es la etiqueta para comprimir con zip)
+
+zip -r nombre del archivo comprimido y la carpeta donde comprimir 
+
+DESCOMPRIMIR:
+unzip -r TOcompressInZip.Zip (y en la pregunta que hace se puede coloca a de all o todo)
+

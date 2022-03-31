@@ -1,0 +1,8 @@
+LS -L: Sirve para visualizar las carpetas y los archivos de la ruta en donde me encuentro
+       y me muestra toda la informacion de las mismas
+
+ls -lS: Sirve para visualizar las carpetas y principalmente visualizar por el tamaño de las mismas,
+        del mas pesado al mas liviano
+
+
+

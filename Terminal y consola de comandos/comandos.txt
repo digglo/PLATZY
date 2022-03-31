@@ -1,0 +1,64 @@
+LS: nos lista nuestro sistema de archivos 
+
+CD: Sirve para moverse entre Carpetas
+-SE ESCROBE CD y NOMBRE DE LA Carpetas
+
+CD ..: Sirve para devolverse a la carpeta enterior
+
+CLS: Sirve para limpiar la pantalla
+
+L: Sirve para ver toda la informacion de los archivos de una Carpetas
+
+PWD: Nos muestra la ruta en donde estamos
+
+FILE: sirve para ver la informacion del archivo nombrado
+-SE ESCRIBE FILE y NOMBRE DE LA RUTA O EL ARCHIVO
+
+TREE: Nos despliega todo el directorio como si fuera un arbol
+
+tree -L 2: Nos despliega la cantidad de niveles del directorio que le indiquemos y lo hace como si fuera
+           un arbol
+
+MKFIR: Sirve para crear carpetas
+
+TOUCH: Sirve para crear archivos (se pueden crear varios al mismo tiempo mkdir dir1 dir2)
+
+CP: Para copiar un archivo (Cp file1 nombre del nuevo archivo)
+
+MV: Sirve para mover un archivo (mv nombre del archivo ..)
+-TAMBIEN PUEDE RENOMBRAR ARCHIVOS MV FILE1 nuevo nombre del archivo
+
+RM: sirve para borrar archivos (rm y nombre del archivo)
+
+RM -R:Sirve para borrar carpetas con todos sus archivos
+
+HEAD: Nos muestra la cabecera del documento (head y nombre del archivo y un - numero si se despliega
+      definir cuantas lineas)
+
+TAIL: Nos muestras las ultimas lineas del documento (tai y y nombre del archivo y un - numero si se despliega
+      definir cuantas lineas)
+
+LESS: Nos muestras el contenido del archivo de manera interactiva (si se coloca en la linea que genera
+      la opcion LESS un / nos permite realizar busquedas y para salir se oprime q)
+
+OPEN: Sirve para abrir archivos
+
+CAT: Sirve par ver el contenido de un archivo y modificarlo en la terminal
+
+xdg-open: Sirve para abrir archivos (xdg-open y el nombre del archivo y lo abre con el editor de texto
+          predeterminado)
+
+NAUTILUS: Sirve para abrir la opcion o pantalla de mis archivos y me lo puede abrir desde cualquier 
+          carpeta que se indique (nautilus documets)
+
+TYPE: Sirve para saber que tipo de comando es un comando
+
+ALIAS: Sirve para crear comandos (alias l="ls -lh")
+
+HELP: Te sirve para saber que funciones tienen los demas comandos, es un comando de ayuda (help cd)
+
+MAN: Es un manual de comandos
+
+INFO: Sirve para ver la descripcion de un comando
+
+CAL: Nos muestra cun calendario

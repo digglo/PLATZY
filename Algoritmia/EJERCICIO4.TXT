@@ -1,0 +1,42 @@
+Ejercicio 1
+Escribe una función recursiva para un timer que cada 5 minutos se agregue 10 minutos más a 
+su cuenta total.
+
+var minutos = 1;
+let tymer = 0;
+contador = 0;
+
+función timer(tymer,minutos){
+
+whyle(tymer<=100){
+
+if(contador=5){
+
+    return minutos = minutos +10;
+
+    imprimir " han pasado minutos, minutos ";
+
+    return minutos = 0;
+
+
+}else if(contador<5){
+
+return contador ++;
+
+}
+
+return tymer ++;
+
+}
+
+
+Ejercicio 2
+Escribe una función recursiva para encontrar el número mayor de un array.
+
+
+
+
+
+Ejercicio 3
+Escribe una función recursiva para convertir de minúscula a mayúscula el primer y último carácter 
+de un string.

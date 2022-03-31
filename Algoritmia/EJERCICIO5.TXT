@@ -1,0 +1,12 @@
+Encender una vela
+En el siguiente diagrama verás el flujo del proceso para encender una vela,
+
+image1.png
+Cuenta regresiva
+image2.png
+Entrar a una tienda
+image3.png
+Realizar la compra de zapatos
+image4.png
+Validar si una persona es mayor de edad
+image5.png

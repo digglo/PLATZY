@@ -1,0 +1,10 @@
+switch(numero){
+case 1:
+"es el numero 1"
+break;
+case 2:
+"es el caso 2"
+break;
+default: 
+"el numero es mayor a 2"
+}

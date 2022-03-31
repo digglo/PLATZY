@@ -1,0 +1,78 @@
+Desplazamiento entre dos puntos
+Realiza un algoritmo que te permita ir de tu casa al supermercado más lejano en tu ciudad,
+ten en cuenta en qué vehículo irás, si hay semáforos, tiempo de ruta y cuál sería la más 
+óptima para llegar en cuanto a tiempo y recursos.
+
+let tienda: boolean;
+
+if (pedido = 1){
+
+  let compra: new object();
+  
+  compra.tipo: lacteos;
+  compra.cantidad: 2;
+  compra.producto: leche;
+
+  do{
+
+    let transporte: boolean:
+
+    if (transporte=1){
+
+        let ruta1: nre object();
+
+        let ruta1.ubicacion: EXITO 68;
+        let ruta1.distacion: 500M;
+        let ruta1.tiempo: 30m;
+        
+        let ruta2: nre object();
+
+        let ruta2.ubicacion: VENECIA;
+        let ruta2.distacion: 1k;
+        let ruta2.tiempo: 1H;
+
+        if(ruta1.tiempo<ruta2.tiempo1){
+
+            " por favor tome ruta 1 "
+
+        }else if(ruta2-tiempo<ruta1.tiempo){
+
+            " por favor tome ruta 2 "
+
+        }else{
+
+          
+          " no voy "
+
+        }
+
+    }else{
+
+        "me quedo en casa"
+
+    }
+
+  }
+
+}else {
+
+"vamos a ver series";
+
+}
+
+Pedir comida a domicilio
+Realiza un algoritmo para pedir comida a domicilio, ten en cuenta que debes buscar primero el
+ medio de contacto hacia el lugar donde deseas ordenar.
+
+Hacer mercado
+Realiza un algoritmo para ir a realizar el mercado que falta en tu casa, ten en cuenta primero 
+determinar qué elementos te faltan, qué debes hacer paso a paso para llegar al supermercado, 
+seleccionarlos, pagar y volver.
+
+Poner a cargar tu celular
+Realiza un algoritmo para cargar tu celular, ten en cuenta si estás cerca de la energía, si tienes
+ el cargador cerca y si tu celular necesita carga o no.
+
+Cocinar arroz
+Realiza un algoritmo para cocinar arroz, ten en cuenta la receta, los ingredientes, tiempo de cocción,
+ uso de los elementos en la cocina y demás factores que implican preparar esta comida.

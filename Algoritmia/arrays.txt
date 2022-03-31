@@ -1,0 +1,8 @@
+ARRAYS: conjunto de elementos ordenados en filas
+
+-Siempre comienzan en 0
+-Pueden tener diferentes tamaños
+.Puede contener letras
+-Se puede ordenar
+-Se puede recorrer
+-Se puede acceder a una posicion especifica

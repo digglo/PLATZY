@@ -1,0 +1,11 @@
+IF CONFIG:
+Muestra informacion de la red (sirve para configurar puertos o servidores)
+
+ping: Indica si una pagina esta activa (y lo muestra monstrando paquetes o lineas de codigo continuas)
+
+CURL: Trea el texto de una red (trae el HTML de una pagina como chrome)
+
+WGET: Para traer cosas de internet (se utiliza para instalar archivos o comandos)
+
+TRACEROUTE: Nos dice los puntos o rutas a los que nos conectamos cuando accedemos a una pagina o algo
+

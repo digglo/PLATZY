@@ -1,0 +1,18 @@
+COMO CONVERTIR UN NUMERO A BINARIO:
+
+El numero se debera dividir en 2, si el numero es multiplicado x2 y no sobra o falta un valor es un 0 
+en cambio si se multiplica y sobra o falta un valor es 1
+
+Ejemplo: 32/2 = 14 lo cual no sobra ni falta si se multiplica el 14 entonces es un 0
+         14/2 = 8 como no se pueden colocar decimales, se coloca el numero mas cercano que seria 8 y aqui
+         sobra un 1 que seria lo que tomariamos en BINARIO
+
+ACLARACION: para saber eel numero en binario se cogen los valores desde el 1 hasta el valor deseado
+            o dicho de otra manera se toman los valores al revez de como surgieron
+
+
+EN LA SUMA:
+0+0 = 0
+0+1 = 1
+1+0 = 1
+1+1 = 10

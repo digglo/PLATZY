@@ -1,0 +1,22 @@
+Es un evento anormal que ocurre durante la ejecucion
+
+Sirve para cuadno haya errores, para que el codigo continue y no se rompra
+
+TROW: ERRAMIENTA QUE SE PUEDE LLAMAR EN CUALQUIER LUGAR Y QUE SE NECESITA CAPTURAR, Y SI HAY UN ERROR
+      MANDA UN MENSAJE
+
+TRY CATCH: MANEJA LA EJECUCION DEL ERROR (INTENTA HACER X Y SI FALLA EJECUTA Y)
+
+TRY{
+
+ decir hola
+
+}catch (e){
+
+    ups, no pude decir hola
+
+}finally{
+
+todo va a estar bien
+
+}

@@ -1,0 +1,7 @@
+JAVA
+-es de oracle
+-se creo para servidores
+- se utiliza en muchos bancos
+-se utiliza mucho en javascript
+
+no son los mismo

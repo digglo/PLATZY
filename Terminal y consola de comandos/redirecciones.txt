@@ -1,0 +1,11 @@
+para redirigir un archivo se utiliza > y para concatenar se coloca >>
+
+REDIRECCIONES: Sirve para almacenar informacion de un documento en un archivo, por ejemplo si ocurre
+               un error, con esto se redirige el contenido del error a un archivo para verlo mas tarde
+
+ls picture > mis archivos: enviar los tipos de archivos indicados a un solo archivos que va a contener
+             todo  (ls pictures(tipo de archivo) > nombre del archivo o carpeta al que se redirigen)
+
+>>: sirve para cuando ya se redirigio un tipo de archivo y se quiere reenviar otro sirve para que no cree
+    otro archivo con el mismo nombre dentro del archivo creado anteriormente
+

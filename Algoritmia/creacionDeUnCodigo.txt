@@ -1,0 +1,7 @@
+RECOMENDACIONES:
+
+- Hacer diagramas de flujo
+
+- Analizar la logiza que menaja mi cerebro para dar solucion a la cituacion y pasarlo a matematicas
+  o codigo. Toca analizar cada pensamiento de como solucione el problema en la mente, para poder para
+  sarlo al cadigo

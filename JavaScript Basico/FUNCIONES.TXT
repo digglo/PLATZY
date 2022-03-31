@@ -1,0 +1,22 @@
+TIPOS DE FUNCIONES
+-DECLARATIVAS
+-EXPRESION
+
+
+DECLARATIVAS: (que se crea pero sin valores)
+
+function miFuncion(){
+
+ return 3;
+
+}
+
+EXPRESION: (se crea con valores)
+
+function miFuncion(a, b){
+
+  return a + b;
+
+
+}
+

@@ -1,0 +1,3 @@
+CHAR: Caracter (palabra o letra)
+
+STRING: Cadena de caracteres (un texto lleno de palabras)

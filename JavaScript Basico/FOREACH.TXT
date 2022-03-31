@@ -1,0 +1,14 @@
+LET articulo = [
+    
+    {nombre:"huevo", precio:200},
+    {nombre:"tomate,precio:500}
+];
+
+LET find = articulo.find(function(articulo){
+
+  console.log(articulo.nombre)
+
+});
+
+
+//Va a filtrar en el array y me devuelve lo que busco, si buscos los precios me devuelve todos los precios

@@ -1,0 +1,54 @@
+for(x=0;x<=3;x++){
+}
+
+PERMITE RECORRER CIERTAS CARACTERISTICAS DEL CODIGO DURANTE LAS VECES DESEADAS
+
+-IN: (sirve si necesito el indice)
+Si se coloca in despues de una varibale estoy diciendo que furante el ciclo la condicion sea que la 
+variable se llene con el contenido de objeto que lo tenga
+EJEMPLO:
+for(p in coleccion){
+
+ //si se coloca p en un console.log muestra todas las posiciones ocupadas en coleccion,
+ y con eso se puede hacer que siempre que haya contenido en coleccion se muestre
+ EJEMPLO:
+ console.log(coleccion[p]);
+
+ // con este ciclo el sistema recorre automaticamente un array
+
+
+}
+
+-OF: (sirve si necesito el objeto o la instancia)
+si se coloca of el resultado es el mismo de in, pero en vez de tener que nombrar a la variable llena
+de contenido y dentro de esta llamar a la que ahora contiene lo que contenia la otra, directamente
+se llama a la nueva que contiene todo en general y listo. ES MAS RECOMENDABLE of
+EJEMPLO:
+for(let p of coleccion){
+
+ console.log(p);
+
+ // con este ciclo el sistema recorre automaticamente un array
+
+}
+
+while(X<=10){
+
+"Soy menor que 10"
+
+}
+
+CICLO QUE SE EJECUTA SEGUN UNA CONDICION, SI LA CONDICION SE CUMPLE SE REALIZA EL CICLO
+
+do{
+
+    i++
+
+} while(i<=10){
+
+    "Soy menor que 10"
+
+}
+
+ANTES DE QUE LA CONDICION SE CUMPLA, SE EJECUTA EL CICLO
+

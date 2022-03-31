@@ -1,0 +1,34 @@
+El siguiente ejercicio recibirá una cadena de texto string y a partir de la posición de cada letra 
+sacaremos un substring o texto que está intrínseco en la cadena principal.
+
+Por ejemplo: “lasfloresazules”, sacaremos sólo el texto “flores”.
+
+Para llevar a cabo este ejercicio realizaremos los siguientes pasos:
+
+Recibir el texto en string.
+Indicar posición de la letra con la cual empieza nuestro subtexto, en nuestro caso “f”.
+Indicar posición de la letra con la cual termina nuestro subtexto, en nuestro caso “s”.
+Mostrar el subtexto.
+
+
+en java se tiene que encapsular todo en clases
+
+class main {
+
+  // primero toca difinir la visuvilidad de lo que se va a hacer
+  public static void showSubString(string text, int start, int end){
+
+   //sirve para imprimir en una line lo que esta dentro de los parentesis
+    System.out.println(text.substring(start,end));
+
+  }
+
+  public static void main(string[] arg){
+
+      string tex = "lasfloresazules";
+
+     showSubString(text, 4, 7);
+
+  }
+
+}

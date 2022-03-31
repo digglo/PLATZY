@@ -1,0 +1,10 @@
+THIS:
+
+Es un indicador de la instancia de donde estoy, por ejemplo cuando se ejecuta el contructor;
+toca indicar que este atributo es parte de el objeto y para esto se utiliza el THIS
+
+ACLARACION:
+
+lo que esta fuera del contructor no lleva THIS
+
+lo que esta dentro del contructor lleva THIS

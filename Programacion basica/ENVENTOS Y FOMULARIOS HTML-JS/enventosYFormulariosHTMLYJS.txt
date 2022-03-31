@@ -1,0 +1,2 @@
+EVENTOS: Funciones que se disparan cuando algo ocurre
+

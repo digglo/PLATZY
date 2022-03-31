@@ -1,0 +1,9 @@
+JAVA:
+Java es un lenguaje de programación orientado a objetos y además es una plataforma informática 
+sobre la cual realizamos aplicaciones de escritorio
+
+C:
+El lenguaje de programación C es estructurado, no depende del hardware y permite un desarrollo 
+de aplicaciones de manera rápida. Cuenta con una gran cantidad de tipos de datos, operadores y 
+variables que puedes utilizar para llevar a cabo todas las instrucciones que necesites.
+

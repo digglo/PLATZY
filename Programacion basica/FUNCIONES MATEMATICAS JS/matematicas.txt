@@ -1,0 +1,3 @@
+MATH: es un objeto (clase estatica)
+
+es una coleccion de funciones para realizar operaciones matematicas complejas

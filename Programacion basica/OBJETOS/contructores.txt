@@ -1,0 +1,3 @@
+CONSTRUCTORES:
+
+Funciones que se disparan cuando estoy creando el objetos

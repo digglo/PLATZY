@@ -1,0 +1,10 @@
+DOCUMENT: Es el contenido de la pantalla
+CONTIENE LOS ELEMENTOS DE LA PAGINA WEB
+
+WINDOW: Son las pestañas de una pantalla
+EL OBJETO QUE MANEJAS LAS PESTAÑAS
+
+NAVIGATOR: el aplicativo donde buscamos informacion
+CON ESTE SE PUEDE ACCEDER AL DISCO DURO DEL USUARIO Y AL GPS O EL WIFI
+
+Document Object Model: Forma que usa el navegador para organizar el Document

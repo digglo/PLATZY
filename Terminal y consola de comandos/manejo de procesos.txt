@@ -1,0 +1,11 @@
+PS: sirve para ver que procesos se estan ejecutando en estos momentos
+(es util para comandos asincronos)
+
+TERMINAR PROCESOS
+
+KILL y el id del proceso: (el ID lo muestra utilizando PS)
+
+TOP: (sirve para buscar el ID definitico para terminar procesos)
+(Si se coloca una H nos muetra todos los comandos de filtro que hay)
+
+HTOP: Es la evoluciond de TOP

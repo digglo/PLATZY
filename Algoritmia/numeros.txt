@@ -1,0 +1,8 @@
+TIPOS DE DATOS:
+
+INT: enteros, los comunmente utilizados
+FLOAT: numeros enteros con parte decimal EJEMPLO: 2.5
+SHORT: datos segun el tamaño en bytes maximo 2
+LONG: datos segun el tamaño en bytes maximo 8
+
+RECOMENDACION: EL TIPO DE DATO PUEDE CAMBIAR EL RESULTADO

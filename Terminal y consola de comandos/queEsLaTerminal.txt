@@ -1,0 +1,11 @@
+TERMINAL: Una interfas grafica que simula una linea de comandos SHELL
+
+SHELL: Una linea que toma comandos y los lleva al sistema operativo para hacer algo
+
+-TIPOS:
+  bourne SHELL
+  c SHELL
+  bash SHELL
+  etc
+  power SHELL
+

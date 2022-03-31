@@ -1,0 +1,31 @@
+FIND: find ./ -name file
+(FIND la ruta desed home o en la que estamos -NAME y el nombre del archivo)
+
+FIND ./ -NAME *.TXT: Sirve para buscar todos los archivos que terminen con TXT
+
+FIND ./ -NAME -TYPE -D O F (F para archivos y D para carpetas) -NAME nombre de la ruta: sirve para
+buscar carpetas o archivos segun el tipo que se indique
+
+FIND ./ -SIZE valor: Sirve para buscar archivos de cierto peso
+
+WITCH: para buscar rutas
+
+
+
+
+GREP:
+Sirve para encontrar conincidencias de busqueda dentro de un archivo de texto
+
+EJEMPLO:
+GREP Towers movies.csv (se coloca la etiqueta, luego la palabra a buscar y por ultima el archivo donde
+va a buscar la palabra)
+
+GREP -I TOWERS MOVIES.CSV (la i sirve para ignorar las case sensitive ( CASESENSITIVE: que importen las
+minusculas y las mayusculas ) )
+
+GREP -C MOVIES MOVIES.CSV (-C sirve para contar cuantas veces se repite)
+
+GREP -V (Sirve para buscar diferentes o que no contengan esa palabra)
+
+WC y nombre del archivo: (sirve para contar cuantas palabras hay)
+

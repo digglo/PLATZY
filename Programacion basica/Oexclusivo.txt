@@ -1,0 +1,5 @@
+O exlusivo, sirve para que si son iguales no continue en cambio si una es un no, si se ejecute
+
+-MUY RECOMENDABLE 
+
+para utilizarlo se coloca ^
