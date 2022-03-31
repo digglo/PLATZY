@@ -103,3 +103,16 @@ git merge <branch name>: fusiona la rama actual con la rama especificada y produ
 esta fusión.
 
 git branch: lista las ramas generadas.
+
+
+
+
+RECOMENDACION: GUIARSE CON LOS MENSAJES QUE DEJA LA PANTALLA
+
+
+
+ACLARACIONES:
+
+-- (REPRESENTA QUE SE VA A USAR UNA PALABRA)
+
+-  (REPRESENTA UN COMANDO)
