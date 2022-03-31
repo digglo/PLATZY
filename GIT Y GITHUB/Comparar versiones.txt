@@ -1,0 +1,9 @@
+GIT diff:
+
+Si queremos ver la diferencia entre una versión y otra, no necesariamente todos los cambios desde 
+la creación del archivo, podemos usar el comando git diff commitA commitB
+
+VERDE: VERSION ANTIGUA
+ROJO: VERSION NUEVA
+
+ACLARACIONES: SE PUEDE AYUDAR CON GIT LOG
