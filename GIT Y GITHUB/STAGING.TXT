@@ -1,0 +1,10 @@
+STAGING( SUCEDE CUANDO SE INICIA CON GIT INIT)
+
+-Es el estado temporal (DONDE QUEDA EL DOCUMENTO LUEGO DE GIT ADD)
+
+QUE ES:
+Es un area desconectada de memoria ram donde se agregan los cambios y se crea el repositorio en la
+la carpeta (.git)
+
+-Cuando se ejecuta git add el archivo viaja a Staging desde el directorio 
+-Con commit el archivo viaja de Staging al repositorio (carpeta .git)

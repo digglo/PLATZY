@@ -1,0 +1,16 @@
+AGARRAR UNA RAMA ENTERA Y PEGARLA EN LA PRINCIPAL
+
+El comando rebase es una mala práctica, nunca se debe usar, pero para efectos del curso te lo vamos a 
+enseñar para que hagas tus propios experimentos. Con rebase puedes recoger todos los cambios confirmados 
+en una rama y ponerlos sobre otra.
+
+# Cambiamos a la rama que queremos traer los cambios
+git checkout experiment
+# Aplicamos rebase para traer los cambios de la rama que queremos 
+git rebase master
+
+
+ORDEN DE EJECUCION:
+
+PRIMERO SE EJECUTA EL COMANDO REBASE A LA RAMA QUE VOY A DESAPARECER Y LUEGO SE VUELVE A EJECUTAR EN LA
+RAMA QUE VA A RECIBIR LA INFORMACION

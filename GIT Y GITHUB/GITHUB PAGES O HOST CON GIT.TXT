@@ -1,0 +1,13 @@
+GitHub tiene un servicio de hosting gratis llamado GitHub Pages, tu puedes tener un repositorio donde el 
+contenido del repositorio se vaya a GitHub y se vea online.
+
+Publica tu página en GitHub Pages y compártelo con la comunidad en el área de discusiones de la clase, 
+¡te esperamos!
+
+
+RECOMENDACIONES:
+
+-El nombre del archivo o repositorio que va al host, debera llamarse
+NOMBRE DEL REPOSITORIO.GITHUB.IO
+
+-Todo lo de GIHUB PAGES se hace en settings, en la opcion de PAGES

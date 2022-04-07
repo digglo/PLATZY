@@ -1,0 +1,9 @@
+En GIT, una rama o branch es una versión del código del proyecto sobre el que estás trabajando. 
+Estas ramas ayudan a mantener el orden en el control de versiones y manipular el código de forma segura.
+Por defecto, el proyecto se crea en una rama llamada Main (anteriormente conocida como Master). 
+Cada vez que añades código y guardas los cambios, estás haciendo un commit, que es añadir el nuevo 
+código a una rama. Esto genera nuevas versiones de esta rama o branch, hasta llegar a la versión actual 
+de la rama Main.
+
+
+HITFIX: RAMA DE AREGLLOS (EJEMPLO AREGLLOS DE BUGS)

@@ -1,0 +1,12 @@
+Cómo aregar un alias solo para git
+
+Para un proyecto:
+git config alias.arbolito "log --all --graph --decorate --oneline"
+
+Global:
+
+git config --global alias.arbolito "log --all --graph --decorate --oneline"
+
+Para correrlo:
+
+git arbolito

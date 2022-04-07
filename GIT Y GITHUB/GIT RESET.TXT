@@ -1,0 +1,32 @@
+GIT RESET:
+
+Permite volver a una version anterior y hay 2 tipos --HARD o --SOFT
+
+Este comando nos ayuda a volver en el tiempo. Pero no como git checkout que nos deja ir, mirar, 
+pasear y volver. Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos 
+la historia y la debemos sobreescribir. No hay vuelta atrás.
+
+
+
+
+--HARD: todo vuelve al estado anterior
+
+--SOFT: Se vuelve a la version antgerior, pero no se borra lo que esta en STAGING
+
+
+COMANDOS:
+
+git reset --soft [SHA 1]: elimina los cambios hasta el staging area
+
+git reset --mixed [SHA 1]: elimina los cambios hasta el working area
+
+git reset --hard [SHA 1]: regresa hasta el commit del [SHA-1]
+Donde el SHA-1 es el identificador del commit
+
+git reset HEAD: Este es el comando para sacar archivos del área de staging. No para borrarlos 
+ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, 
+a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
+
+    -lo único que haremos será mover estos cambios de Staging a Unstaged. Seguiremos teniendo los 
+     últimos cambios del archivo, el repositorio mantendrá el archivo (no con sus últimos cambios, 
+     pero sí con los últimos en los que hicimos commit) y no habremos perdido nada.

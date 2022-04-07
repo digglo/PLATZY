@@ -1,0 +1,25 @@
+ORGANIZATION:
+Hace referencia a una empresa o empresas en las que hagas parte y puedes crear una empresa en la cual 
+programaras
+
+PROYECT:
+Multiples proyectos que puedes estar realizando en tu empresa (multiples repositorios)
+
+GIST:
+Un pedazo de codigo que se puede compartir
+
+OPCIONES EN PESTAÑA <CODIGO>:
+-RAW:Muestra el codigo plano
+-BLAME:Responsables de los cambios
+-HISTORY:Muestra la historia del archivo o el log
+
+
+
+RECOMENDACION:
+
+Se recomienda importar los repositorios
+
+
+
+LICENCIA:
+LICENCIAS A TRAVEZ LAS CUALES SE PUEDE PUBLICAR EL CODIGO
