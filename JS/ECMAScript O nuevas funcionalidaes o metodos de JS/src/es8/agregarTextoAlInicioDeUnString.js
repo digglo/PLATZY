@@ -1,0 +1,11 @@
+//PADDING
+//AGREGAR CADENA O ELEMENTOS DE TEXTO A UN STRING 
+
+
+const string = "hello";
+//PARA AGREGAR UNA PALABRA, EL NUMERO MINIMO ES 6 PARA QUE AGREGUE UNA LETRA
+console.log(string.padStart(16, 'hi CAMILO '));
+console.log(string.padEnd(16, 'hi CAMILO '));
+//EJEMPLO DE COMO SIRVE PARA HACER UNA DEMOSTRACION RAPIDA DESDE EL CODIGO, DE UNA FACTURA
+console.log('food'.padEnd(16, ' ------- '));
+

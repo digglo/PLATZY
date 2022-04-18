@@ -1,0 +1,37 @@
+ESTRUCTURA:
+
+VAR frutas = [];
+
+
+EJEMPLO
+
+VAR FRUTAS ? ["MANZANA","PERA"];
+
+
+
+
+ADICIONAR EN UN ARRAY:
+
+array.push("valor a buscar")
+
+QUITAR EN UN ARRAY:
+
+array.pop("valor a buscar")
+
+
+
+
+COLOCAR UN VALOR DE INICIO:
+
+array.unshift("valor a buscar")
+
+ELIMINAR ELEMENTO DE INICIO:
+
+array.shift("valor a buscar")
+
+
+
+TRAER UN VALOR DEL QUE SE DESCONOCE LA POSICION:
+
+array.indexof("valor a buscar")
+

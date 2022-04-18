@@ -1,0 +1,55 @@
+(function (app,I,E,S,A,V,ET) {
+try {
+    var fu = {
+subline:function(c,self,i) { return true; },
+links:function(c) { return !c.e1000.isWritable; },
+check:function(c,e,k) { if (this._emp(c["e"+e] && c["e"+e][k])) throw new app.form.exceptions.EntityIsNotAllowed(e); },
+invalid:function(c,self,i) { throw new app.form.exceptions.ValidationError; },
+valid:function(c,self,i) { return c.m[i] && this._emp(self) ? fu.invalid() : true; },
+screenV:function(c,indexes) { return Object.keys(indexes).some(function (i) { return v[i]&& v[i].call(this, c, this._s(indexes[i]), i) > 0; }, this); },
+sectionV:function(c,indexes) { return indexes.some(function (i) { return c.v[i]; }, this); },
+childV:function(c,indexes) { return indexes.every(function (i) { return c.v[i]; }, this); },
+hideRO:function(self,v) { return this._emp(self) ? 0 : v; }
+    };
+    var v = [/*0*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '1') || this.__in(c.e5["srtype"], '3')) return 2;
+return -1; },/*1*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[1] === 0 || !c.f.enum(d.elements[1]).call(this,c,self,i)) return 0;return 3; },/*2*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,0])) return 0;
+return 2; },/*3*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,0,2])) return 0;
+return 1; },/*4*/function(c,self,i) { if ((!this._emp(self))) return fu.hideRO.call(this,self,1);
+return 0; }];
+    var d = {
+        elements: [
+new E({"i":new I("sr_body","15",5),"t":"Descripci\u00f3n","g":"textarea","|":0,"c":{"regex":"","rows":5},"v":v[0],"va":fu.valid}), 
+new E({"i":new I("srtype","",5),"t":"Tipo solicitud","g":"dropdown","|":0,"c":{"enum":[new V(["1", "3"])],"titles":[]},"v":v[1],"va":fu.valid}), 
+new S({"i":new I("44673#section"),"g":"section","|":0,"c":{"_c":[1,0],"_bs":[]},"v":v[2],"va":fu.valid}), 
+new S({"i":new I("wrapperColumnManager0"),"g":"section_column_manager","|":0,"c":{"_c":[2],"_bs":[]},"v":v[3],"va":fu.valid}), 
+new E({"i":new I("restore_draft-2","",1000),"t":"Restaurar borrador","g":"restore_draft","|":0,"c":{"additionLabel":"Guardado a las {TIME}"},"v":v[4],"va":fu.valid,"p":0})
+        ],
+        title: "Acciones",
+        label: "mobile_activity_request#50#",
+        formId: "2",
+        version: "1",  
+        content: [4,3],
+        actions: [],
+        topology: new app.form.GraphTopology([4,1,0,2,3], [null,[2,3,4],[3,4],[4],null]),
+        isSubmittable: function(c,self,i) { return 0 || !(((c.pc || []).indexOf(true) !== -1) || 0); },
+        showLinks: fu.links,
+        showSubmitLine: fu.subline
+    };
+    app.getFormCollection().register(new app.form.Form(d));
+    
+    
+} catch (error) {
+    console && console.error(error);
+    app.getFormCollection().logError(error);
+}
+})(app,app.form.Identity,app.form.FormElement,app.form.FormSection,app.form.enumeration.Visibility,app.form.enumeration.KeyVisibility,app.form.enumeration.Title);
+(function (app, I, EE, E, EB, EM, O, OX, G) {
+    ([]).forEach(function (r, e) {
+        try {
+            r.registerEnumeration(e, "mobile_activity_request");
+        } catch (error) {
+            console && console.error(error);
+            r.logError(error);
+        }            
+    }.bind(null, app.getFormCollection()));
+})(app, app.form.Identity, app.form.enumeration.EnumerationWithEmptyValue,app.form.enumeration.Enumeration,app.form.enumeration.BitEnumeration, app.form.enumeration.EnumerationWithMultipleValues, app.form.enumeration.Option,app.form.enumeration.InactiveOption,app.form.enumeration.Group);

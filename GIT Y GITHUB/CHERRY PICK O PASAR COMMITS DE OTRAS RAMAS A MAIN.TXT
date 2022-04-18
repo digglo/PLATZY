@@ -1,4 +1,5 @@
-Cherry Pick
+Cherry Pick (TRAE UN COMMIT DE UNA RAMA A OTRA)
+
 Este comando permite coger uno o varios commits de otra rama sin tener que hacer un merge completo. Así, 
 gracias a cherry-pick, podríamos aplicar los commits relacionados con nuestra funcionalidad de Facebook 
 en nuestra rama master sin necesidad de hacer un merge.

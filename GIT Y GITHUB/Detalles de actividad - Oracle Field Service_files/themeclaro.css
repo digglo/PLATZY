@@ -1,0 +1,137 @@
+.themeclaro .top-toolbar,
+.themeclaro.themeredwood .top-toolbar,
+.themeclaro #commands-line,
+.themeclaro.themeredwood #commands-line,
+.themeclaro.themeredwood app\:header .header-wrapper,
+.themeclarosetOfscDebug.themeredwood app\:header .back-button,
+.themeclaro.themeredwood div#manage-container .toa-view-control-paneltitle.toa-panel-title,
+.themeclaro.themeredwood div#manage-container .toa-panel-title.jet-screen-title,
+.themeclaro.themeredwood div#manage-container .jet-screen-title .toa-panel-button-return,
+.themeclaro.themeredwood div#manage-container .toa-panel-caption,
+.themeclaro.themeredwood div#manage-container .toa-view-control-paneltitle.toa-panel-title h1,
+.themeclaro.themeredwood div#manage-container div#content-manage-container .toa-panel-caption__title,
+.themeclaro.themeredwood #jbf-container .header-panel-container,
+.themeclaro.themeredwood #jbf-container .header-panel-container .screenHeading,
+.themeclaro.themeredwood #jbf-container .header-panel-container .icon-text,
+.themeclaro.themeredwood app\:header .back-button,
+.themeclaro.themeredwood div#manage-container #forecasting-panel,
+.themeclaro.themeredwood #jbf-container app\:header div.content-title,
+.themeclaro.themeredwood #community-header,
+.themeclaro.themeredwood #jbf-container .dashboard-configuration-screen-header *,
+.themeclaro.themeredwood .container-frame.resource-dashboard local\:resource-card .resource-card {
+  background-color: #D52B1E;
+}
+.themeclaro.themeredwood #switching-date {
+  top: 100px;
+}
+@media screen and (max-width: 480px) {
+  .themeclaro.themeredwood #switching-date {
+    top: 94px;
+  }
+}
+.themeclaro.jet-fix #content.content,
+.themeclaro.jet-fix .form-screen-layout,
+.themeclaro.jet-fix #content div#manage-container div#content-manage-container,
+.themeclaro.themeredwood.jet-fix #content.content,
+.themeclaro.themeredwood.jet-fix .form-screen-layout,
+.themeclaro.themeredwood.jet-fix #content div#manage-container div#content-manage-container {
+  background-color: #fafafa;
+}
+.themeclaro.jet-fix #mobile-popup-container .screen-default-layout,
+.themeclaro.themeredwood.jet-fix #mobile-popup-container .screen-default-layout {
+  height: 100vh;
+  background-color: #fafafa;
+}
+.themeclaro.themeredwood {
+  --color-header-background: #D52B1E;
+  --color-header-text: #1A1816;
+}
+.themeclaro.themeredwood.dark-header {
+  --color-header-text: #FCFAFB;
+}
+.themeclaro .header-wrapper {
+  background-color: #D52B1E;
+}
+.themeclaro.themeredwood .button.submit {
+  background-color: #0572ce;
+  color: #1A1816;
+}
+.themeclaro.themeredwood .button.submit:hover {
+  background-color: #0464b5;
+}
+.themeclaro.themeredwood .button.submit:active {
+  background-color: #0459a1;
+}
+.themeclaro.themeredwood .button.submit:focus {
+  background-color: #04569c;
+}
+.themeclaro.themeredwood .button.submit:disabled {
+  background-color: rgba(26,24,22,0.12);
+  color: rgba(26,24,22,0.4);
+}
+.themeclaro.themeredwood.dark-submit .button.submit {
+  color: #FCFAFB;
+}
+.themeclaro.themeredwood .button:active:not(:disabled):not(.processing).submit,
+.themeclaro.themeredwood .button.tap-active:not(:disabled):not(.processing).submit,
+.themeclaro.themeredwood .button.active:not(:disabled):not(.processing).submit {
+  background-color: #04569c;
+}
+.themeclaro.themeredwood #panel {
+  background-color: #D52B1E;
+}
+.themeclaro.themeredwood #panel .control-bar .button:hover,
+.themeclaro.themeredwood #panel .control-bar .button:focus,
+.themeclaro.themeredwood #panel .control-bar .button.submit:hover,
+.themeclaro.themeredwood #panel .control-bar .button.submit:focus {
+  background: #e23c30;
+}
+.themeclaro.themeredwood #panel .control-bar .button:active,
+.themeclaro.themeredwood #panel .control-bar .button.submit:active {
+  background: #e44d42;
+}
+.themeclaro.themeredwood .header-stripe {
+  display: none;
+}
+.themeclaro app\:side-panel .wrapper .logo .wrapper-logo-image .oracle-logo,
+.themeclaro.themeredwood app\:side-panel .wrapper .logo .wrapper-logo-image .oracle-logo {
+  background-color: transparent;
+  background: transparent url('../themeclaro/big_logo.png') left center no-repeat;
+  width: 42px;
+  height: 74px;
+  background-size: 42px 42px;
+}
+.themeclaro app\:header .header-wrapper .left-part .logo,
+.themeclaro.themeredwood app\:header .header-wrapper .left-part .logo {
+  height: 100%;
+}
+.themeclaro app\:header .header-wrapper .left-part .logo .main-logo,
+.themeclaro.themeredwood app\:header .header-wrapper .left-part .logo .main-logo {
+  background-color: transparent;
+  background: transparent url('../themeclaro/big_logo.png') left center no-repeat;
+  height: 100%;
+  min-width: 52px;
+  background-size: contain;
+}
+.themeclaro app\:header .header-wrapper {
+  color: #FCFBFA;
+  background: #D52B1E;
+}
+.themeclaro app\:header .header-wrapper .left-part .local-navigation .current-screen-title {
+  color: #FCFBFA;
+}
+.themeclaro app\:header .header-wrapper .left-part .logo .product-logo-title {
+  color: #FCFBFA;
+}
+.themeclaro app\:header .header-wrapper .global-navigation-menu .global-navigation-item {
+  color: #FCFBFA;
+}
+.themeclaro app\:header .icon-arrow {
+  border-top-color: #FFF;
+}
+.themeclaro app\:header .user-menu.opened {
+  color: #4D4D4D;
+}
+.themeclaro app\:header .user-menu.opened .icon-arrow {
+  border-top-color: #878c90;
+}

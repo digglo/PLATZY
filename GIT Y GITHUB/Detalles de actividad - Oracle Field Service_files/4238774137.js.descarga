@@ -1,0 +1,97 @@
+(function (app,I,E,S,A,V,ET) {
+try {
+    var fu = {
+subline:function(c,self,i) { return true; },
+links:function(c) { return !c.e1000.isWritable; },
+check:function(c,e,k) { if (this._emp(c["e"+e] && c["e"+e][k])) throw new app.form.exceptions.EntityIsNotAllowed(e); },
+invalid:function(c,self,i) { throw new app.form.exceptions.ValidationError; },
+valid:function(c,self,i) { return c.m[i] && this._emp(self) ? fu.invalid() : true; },
+screenV:function(c,indexes) { return Object.keys(indexes).some(function (i) { return v[i]&& v[i].call(this, c, this._s(indexes[i]), i) > 0; }, this); },
+sectionV:function(c,indexes) { return indexes.some(function (i) { return c.v[i]; }, this); },
+childV:function(c,indexes) { return indexes.every(function (i) { return c.v[i]; }, this); },
+hideRO:function(self,v) { return this._emp(self) ? 0 : v; }
+    };
+    var v = [/*0*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,2,3,4,5,6,7,8,9,10])) return 0;
+return 2; },/*1*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (!(this.__in(c.e1["aworktype"], '113','115','204') || this.__in(c.e1._("aworktype").groupId, '113','115','204'))) return fu.hideRO.call(this,self,1);
+return -1; },/*2*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if ((this.__in(c.e1["aworktype"], '-1') || this.__in(c.e1._("aworktype").groupId, '-1'))) return fu.hideRO.call(this,self,1);
+return -1; },/*3*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*4*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*5*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[5] === 0 || !c.f.enum(d.elements[5]).call(this,c,self,i)) return 0;return fu.hideRO.call(this,self,1); },/*6*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[6] === 0 || !c.f.enum(d.elements[6]).call(this,c,self,i)) return 0;return fu.hideRO.call(this,self,1); },/*7*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (!(this.__in(c.e1["aworktype"], '113','115','204') || this.__in(c.e1._("aworktype").groupId, '113','115','204'))) return fu.hideRO.call(this,self,1);
+return -1; },/*8*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*9*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[9] === 0 || !c.f.enum(d.elements[9]).call(this,c,self,i)) return 0;return fu.hideRO.call(this,self,1); },/*10*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*11*/function(c,self,i) { if (!fu.sectionV.call(this,c,[12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28])) return 0;
+return 2; },/*12*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*13*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*14*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*15*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*16*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*17*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*18*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*19*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*20*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*21*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*22*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*23*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*24*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*25*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*26*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*27*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*28*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*29*/function(c,self,i) { if (!fu.sectionV.call(this,c,[30,31,32,33])) return 0;
+return 2; },/*30*/function(c,self,i) { return 1; },/*31*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*32*/function(c,self,i) { return 1; },/*33*/function(c,self,i) { return 1; },/*34*/function(c,self,i) { if (!fu.sectionV.call(this,c,[35,36])) return 0;
+return 2; },/*35*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*36*/function(c,self,i) { return fu.hideRO.call(this,self,1); },/*37*/function(c,self,i) { if (!fu.sectionV.call(this,c,[38])) return 0;
+return 2; },/*38*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*39*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,2,3,4,5,6,7,8,9,10,0,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,11,30,31,32,33,29,35,36,34,38,37])) return 0;
+return 1; },/*40*/function(c,self,i) { if ((!this._emp(self))) return fu.hideRO.call(this,self,1);
+return 0; }];
+    var d = {
+        elements: [
+new S({"i":new I("section#element_2"),"t":"Informaci\u00f3n Actividad","g":"section","|":0,"c":{"_c":[1,2,3,4,5,6,7,8,9,10],"_bs":[]},"v":v[0],"va":fu.valid}), 
+new E({"i":new I("XA_NombreCompleto","720",1),"t":"Suscriptor","g":"input","|":0,"c":{"regex":""},"v":v[1],"va":fu.valid}), 
+new E({"i":new I("XA_Prioridad","184",1),"t":"Priorizaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[2],"va":fu.valid}), 
+new E({"i":new I("caddress","",1),"t":"Direcci\u00f3n Instalaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[3],"va":fu.valid}), 
+new E({"i":new I("ccity","",1),"t":"Ciudad","g":"input","|":0,"c":{"regex":""},"v":v[4],"va":fu.valid}), 
+new E({"i":new I("aworktype","",1),"t":"Tipo de Actividad","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[5],"va":fu.valid}), 
+new E({"i":new I("XA_WorkOrderSubtype","158",1),"t":"Subtipo T","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[6],"va":fu.valid}), 
+new E({"i":new I("customer_number","",1),"t":"Cuenta No.","g":"input","|":0,"c":{"regex":""},"v":v[7],"va":fu.valid}), 
+new E({"i":new I("appt_number","",1),"t":"OT No.","g":"input","|":0,"c":{"regex":"","maxlength":40},"v":v[8],"va":fu.valid}), 
+new E({"i":new I("astatus","",1),"t":"Estado","g":"dropdown","|":0,"c":{"regex":""},"v":v[9],"x":function(c,self,i) { return 1; },"va":fu.valid}), 
+new E({"i":new I("Node","188",1),"t":"Nodo","g":"input","|":0,"c":{"regex":""},"v":v[10],"va":fu.valid}), 
+new S({"i":new I("section#element_29"),"t":"Matriz","g":"section","|":1,"c":{"_c":[12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],"_bs":[]},"v":v[11],"va":fu.valid}), 
+new E({"i":new I("XA_CuentaMatriz","179",1),"t":"Cuenta Matriz","g":"input","|":0,"c":{"regex":""},"v":v[12],"va":fu.valid}), 
+new E({"i":new I("XA_NombreEdificio","177",1),"t":"Nombre del edificio","g":"input","|":0,"c":{"regex":""},"v":v[13],"va":fu.valid}), 
+new E({"i":new I("XA_DireccionEdificio","176",1),"t":"Direcci\u00f3n del edificio","g":"input","|":0,"c":{"regex":""},"v":v[14],"va":fu.valid}), 
+new E({"i":new I("XA_DireccionEdificio2","1396",1),"t":"Direccion Alterna","g":"input","|":0,"c":{"regex":""},"v":v[15],"va":fu.valid}), 
+new E({"i":new I("XA_Localidad","1397",1),"t":"Localidad","g":"input","|":0,"c":{"regex":""},"v":v[16],"va":fu.valid}), 
+new E({"i":new I("XA_Nodocobertura","1398",1),"t":"Nodo cobertura","g":"input","|":0,"c":{"regex":""},"v":v[17],"va":fu.valid}), 
+new E({"i":new I("XA_Manzana","1399",1),"t":"Manzana","g":"input","|":0,"c":{"regex":""},"v":v[18],"va":fu.valid}), 
+new E({"i":new I("XA_Lugarcodigo","1400",1),"t":"Lugar codigo","g":"input","|":0,"c":{"regex":""},"v":v[19],"va":fu.valid}), 
+new E({"i":new I("XA_OtrasDirecciones","661",1),"t":"Otras Direcciones","g":"input","|":0,"c":{"regex":""},"v":v[20],"va":fu.valid}), 
+new E({"i":new I("XA_CompaniaAsensores","729",1),"t":"Compa\u00f1\u00eda Asensores","g":"input","|":0,"c":{"regex":""},"v":v[21],"va":fu.valid}), 
+new E({"i":new I("XA_CompaniaAdministracion","731",1),"t":"Compa\u00f1\u00eda de Administraci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[22],"va":fu.valid}), 
+new E({"i":new I("XA_Barrio","205",1),"t":"Barrio","g":"input","|":0,"c":{"regex":""},"v":v[23],"va":fu.valid}), 
+new E({"i":new I("XA_ContactoEdificio","175",1),"t":"Contacto del edificio","g":"input","|":0,"c":{"regex":""},"v":v[24],"va":fu.valid}), 
+new E({"i":new I("XA_TelefonoUnoEdificio","169",1),"t":"Telefono uno del edificio","g":"phone","|":0,"c":{"regex":""},"v":v[25],"va":function(c,self,i) { return [(this._emp(self) || this._rgx(self,"^ *\\+? *[0-9]+[-0-9() ]*$","") || fu.invalid()),fu.valid.call(this,c,self,i)].every(function(v) {return v}); }}), 
+new E({"i":new I("XA_TelefonoDosEdificio","168",1),"t":"Telefono dos del edificio","g":"phone","|":0,"c":{"regex":""},"v":v[26],"va":function(c,self,i) { return [(this._emp(self) || this._rgx(self,"^ *\\+? *[0-9]+[-0-9() ]*$","") || fu.invalid()),fu.valid.call(this,c,self,i)].every(function(v) {return v}); }}), 
+new E({"i":new I("XA_HogaresActivos","660",1),"t":"Hogares Activos","g":"input","|":0,"c":{"regex":""},"v":v[27],"va":fu.valid}), 
+new E({"i":new I("XA_NoHHPPS","630",1),"t":"No. HHPPS","g":"input","|":0,"c":{"regex":""},"v":v[28],"va":fu.valid}), 
+new S({"i":new I("section#element_17"),"t":"Informaci\u00f3n Edificio","g":"section","|":2,"c":{"_c":[30,31,32,33],"_bs":[]},"v":v[29],"va":fu.valid}), 
+new E({"i":new I("text#element_18","",11),"t":"Horarios Atenci\u00f3n","g":"text","|":0,"v":v[30],"va":fu.valid}), 
+new E({"i":new I("XA_EstadoEdificio","167",1),"t":"Estado del edificio","g":"input","|":0,"c":{"regex":""},"v":v[31],"va":fu.valid}), 
+new E({"i":new I("text#element_20","",11),"t":"BlackList Edificio","g":"text","|":0,"v":v[32],"va":fu.valid}), 
+new E({"i":new I("text#element_21","",11),"t":"Equipos Cuenta Matriz","g":"text","|":0,"v":v[33],"va":fu.valid}), 
+new S({"i":new I("section#element_25"),"t":"Niveles Edificio","g":"section","|":2,"c":{"_c":[35,36],"_bs":[]},"v":v[34],"va":fu.valid}), 
+new E({"i":new I("XA_NivelesEquiposEdicios","285",1),"t":"Resultado de niveles de edficio","g":"input","|":0,"c":{"regex":""},"v":v[35],"va":fu.valid}), 
+new E({"i":new I("XA_ValidacionNivelesEdificio_Resultado","",11),"t":"Building's levels result]","g":"input","|":0,"v":v[36],"va":fu.valid}), 
+new S({"i":new I("section#element_23"),"t":"Informaci\u00f3n Catastral","g":"section","|":2,"c":{"_c":[38],"_bs":[]},"v":v[37],"va":fu.valid}), 
+new E({"i":new I("XA_Indicaciones","165",1),"t":"Indicaciones","g":"input","|":0,"c":{"regex":""},"v":v[38],"va":fu.valid}), 
+new S({"i":new I("wrapperColumnManager0"),"g":"section_column_manager","|":0,"c":{"_c":[0,11,29,34,37],"_bs":[]},"v":v[39],"va":fu.valid}), 
+new E({"i":new I("restore_draft-202","",1000),"t":"Restaurar borrador","g":"restore_draft","|":0,"c":{"additionLabel":"Guardado a las {TIME}"},"v":v[40],"va":fu.valid,"p":0})
+        ],
+        title: "activity matriz1",
+        label: "activity_matriz1",
+        formId: "202",
+        version: "4",  
+        content: [40,39],
+        actions: [],
+        topology: new app.form.GraphTopology([40,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,6,5,7,2,1,4,3,0,39], [null,[2,40],[40],[5,40],[5,40],[40],[10,40],[10,40],[10,40],[10,40],[40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[28,40],[40],[39,40],[39,40],[39,40],[39,40],[39,36,35,34,40],[39,40],[39,40],[39,40],[39,40],[39,40],[40],null]),
+        isSubmittable: function(c,self,i) { return 0 || !(((c.pc || []).indexOf(true) !== -1) || 0); },
+        showLinks: fu.links,
+        showSubmitLine: fu.subline
+    };
+    app.getFormCollection().register(new app.form.Form(d));
+    
+    
+} catch (error) {
+    console && console.error(error);
+    app.getFormCollection().logError(error);
+}
+})(app,app.form.Identity,app.form.FormElement,app.form.FormSection,app.form.enumeration.Visibility,app.form.enumeration.KeyVisibility,app.form.enumeration.Title);
+(function (app, I, EE, E, EB, EM, O, OX, G) {
+    ([]).forEach(function (r, e) {
+        try {
+            r.registerEnumeration(e, "activity_matriz1");
+        } catch (error) {
+            console && console.error(error);
+            r.logError(error);
+        }            
+    }.bind(null, app.getFormCollection()));
+})(app, app.form.Identity, app.form.enumeration.EnumerationWithEmptyValue,app.form.enumeration.Enumeration,app.form.enumeration.BitEnumeration, app.form.enumeration.EnumerationWithMultipleValues, app.form.enumeration.Option,app.form.enumeration.InactiveOption,app.form.enumeration.Group);

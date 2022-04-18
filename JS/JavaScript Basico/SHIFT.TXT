@@ -1,0 +1,3 @@
+.shift()
+Ahora pasemos a la otra cara de la moneda donde necesitamos eliminar un elemento del array. .shift() 
+eliminar el primer elemento de un array, es decir, elimina el elemento que esté en el índice 0.

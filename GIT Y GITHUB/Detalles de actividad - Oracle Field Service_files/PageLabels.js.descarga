@@ -1,0 +1,5 @@
+define(['ojs/ojcore'], function(oj) {
+		return function(){
+			return toa.app.model("pageLabels");
+		}
+});

@@ -1,3 +1,0 @@
-Si ya entendiste cómo funciona .shift() aplicar .pop() te será pan comido 🍞. El método .pop() 
-eliminará el último elemento de un array. En este sentido, si tenemos un array de 5 elementos, pop() 
-eliminará el elemento en el índice 4. Usemos el mismo ejemplo pero usando este método.

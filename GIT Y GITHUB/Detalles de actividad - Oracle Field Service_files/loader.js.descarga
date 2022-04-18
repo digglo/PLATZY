@@ -1,0 +1,207 @@
+define(
+    ['knockout', 'jquery', 'modules/app', 'HttpService'],
+    /**
+     * @param ko
+     * @param jQuery
+     * @param {app} app
+     * @param {HttpService} httpService
+     * @returns {Loader}
+     */
+    function (ko, jQuery, app, httpService) {
+        /**
+         * @constructor
+         */
+        function Loader() {
+            var self = this;
+
+            var jetModelEvents = {
+                lifecycleListener: {
+                    activated: function (info) {
+                        var name = ko.utils.unwrapObservable(info.valueAccessor()).name;
+                        console.debug('Activated: ' + name + ', ' + new Date().toLocaleString());
+                    },
+
+                    attached: function (info) {
+                        var name = ko.utils.unwrapObservable(info.valueAccessor()).name;
+                        console.debug('Attached: ' + name + ', fromCache: ' + info.fromCache +
+                            ', ' + new Date().toLocaleString());
+                    },
+
+                    detached: function (info) { // Does not work
+                        var name = ko.utils.unwrapObservable(info.valueAccessor()).name;
+                        console.debug('Detached: ' + name + ', ' + new Date().toLocaleString());
+                    },
+
+                    connected: function (info) { // Does not work
+                        var name = ko.utils.unwrapObservable(info.valueAccessor()).name;
+                        console.debug('Connected: ' + name + ', ' + new Date().toLocaleString());
+                    },
+
+                    disconnected: function (info) { // Does not work
+                        var name = ko.utils.unwrapObservable(info.valueAccessor()).name;
+                        console.debug('Disconnected: ' + name + ', ' + new Date().toLocaleString());
+                    },
+
+                    transitionCompleted: function (info) {
+                        var name = ko.utils.unwrapObservable(info.valueAccessor()).name;
+                        console.debug('Transition completed: ' + name + ', ' + new Date().toLocaleString());
+                    }
+                }
+            };
+
+            this.detachModule = function () {
+                if (app.isloaded() && app.jetModule() && app.jetModule().selector) {
+                    if (document.querySelector(app.jetModule().selector)) {
+                        ko.cleanNode(document.querySelector(app.jetModule().selector));
+                    }
+
+                    app.isloaded(false);
+                    console.debug(app.jetModule().selector + ": Detach view");
+                }
+            };
+
+            this.jetCssHack = function (status) {
+                var style = document.querySelector('#jet-alta-style'),
+                baseJetStyles = document.querySelectorAll('link[href*="alta"]');
+
+                if (status && !style) {
+                    var head = document.head,
+                        link = document.createElement('link'),
+                        attribute = head.getAttribute('data-resource'),
+                        basePath = '/vendor/css/oj/v11.0.5/',
+                        theme = toa.Theme.getTheme().slice(5).toLowerCase(),
+                        isRedwood = toa.Theme.isRedwood();
+
+                    link.rel = 'stylesheet';
+                    link.id = 'jet-alta-style';
+                    if (theme && theme === 'orangecompany') theme = 'alta';
+                    if (theme && isRedwood) theme = 'redwood';
+
+                    link.href = attribute + basePath + theme + '/oj-' + theme + '-min.css';
+
+                    if (baseJetStyles && baseJetStyles.length > 0 && theme !== 'orangecompany') {
+                        for(var j = 0; j < baseJetStyles.length; j ++) {
+                            baseJetStyles[j].parentNode.removeChild(baseJetStyles[j]);
+                        }
+                    }
+
+                    head.append(link, head.firstElementChild);
+
+                    return link;
+
+                } else if (!status && style) {
+
+
+                    $(((typeof _DATA === "object" && _DATA.is_mobility_app) ? '#manage-container ' : '') + '#manage-content')
+                        .show()
+                        .trigger('resize'); // Hack for Manage - Activities view
+                    if (app.jetModule() && app.jetModule().selector) {
+                        $(app.jetModule().selector).hide();
+                    } else {
+                        $('#content-jet').hide();
+                    }
+                    $('.jet_selected').removeClass('selected jet_selected');
+                    app.isloaded(false);
+                    style.parentNode.removeChild(style);
+                }
+                return null;
+            };
+
+            var isLoaded = [];
+            this.load = function (module) {
+                if (module.name in isLoaded) {
+                    app.jetModule(module);
+                    app.isloaded(true);
+
+                    return;
+                }
+
+                switch (module.name) {
+                    case 'RoutingPlan':
+                        // Get placeholders
+                        var req = new httpService({
+                            controller: 'routingprofiles',
+                            method: 'getPlaceholders'
+                        });
+                        req.params = {
+                            screen: 'routing_run_list'
+                        };
+                        req.send().then(function (response) {
+                            console.debug('RoutingPlan - placeholders');
+                            for (var i in response.placeholders) {
+                                _DATA.glossary[i] = response.placeholders[i];
+                            }
+                            app.jetModule(module);
+                            app.isloaded(true);
+                        });
+                        break;
+
+                    default:
+                        app.jetModule(module);
+                        app.isloaded(true);
+                }
+
+                isLoaded[module.name] = true;
+            };
+
+            this.run = function (data) {
+                var jetModel = {
+                    name: jetPages[data.label],
+                    label: data.label,
+                    // 'cacheKey' use vary careful, this param for JET allow caching templates with states on custom
+                    // JET components like 'input.valid', in case after saving routing plan, any modify or add new plan
+                    // events detect valid state on components like inputs even if you type non-valid data for this
+                    // input and it shows error message
+                    // cacheKey: data.label,
+                    title: data.name,
+                    // css selector for uniq html element for render JET module
+                    // pay your attention - if you will use class attribute instead of id,
+                    // make sure a block with this class is only one on the page,
+                    // if no will be used first html element with this className
+                    selector: data.selector || null
+                };
+
+                if (jetPages[data.label]) {
+                    if (jetModel.selector) {
+                        var el = $(jetModel.selector);
+                        $(((typeof _DATA === "object" && _DATA.is_mobility_app) ? '#manage-container ' : '') + '#manage-content').show();
+                        el.show();
+                        self.jetCssHack(true);
+                        el.attr('data-bind', 'ojModule: $root');
+                        console.debug('Custom ko.applyBindings to:' + jetModel.selector);
+                        ko.applyBindings(jQuery.extend(jetModelEvents, jetModel), document.querySelector(jetModel.selector));
+
+                        return;
+                    } else {
+                        $(((typeof _DATA === "object" && _DATA.is_mobility_app) ? '#manage-container ' : '') + '#manage-content')
+                            .hide()
+                            .empty();
+                        $(app.selector).show();
+                        _DATA.tabs.set_tabs(0, 0);
+                    }
+
+                    var style = self.jetCssHack(true);
+                    if (style) {
+                        style.onload = function () {
+                            // add dynamic top position for jet-content for different variations of header height depends of logo height etc
+                            var headerHeight = $('#header').height();
+                            if (headerHeight) {
+                                $('#content-jet').css('top', headerHeight);
+
+                            }
+                            self.load(jQuery.extend(jetModelEvents, jetModel));
+                        };
+                    } else {
+                        self.load(jQuery.extend(jetModelEvents, jetModel));
+                    }
+                }
+                else
+                {
+                    app.isloaded(false);
+                }
+            };
+        }
+
+        return new Loader();
+    }
+);

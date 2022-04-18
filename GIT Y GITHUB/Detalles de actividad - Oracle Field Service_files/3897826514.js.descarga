@@ -1,0 +1,76 @@
+(function (app,I,E,S,A,V,ET) {
+try {
+    var fu = {
+subline:function(c,self,i) { return true; },
+links:function(c) { return !c.e1000.isWritable; },
+check:function(c,e,k) { if (this._emp(c["e"+e] && c["e"+e][k])) throw new app.form.exceptions.EntityIsNotAllowed(e); },
+invalid:function(c,self,i) { throw new app.form.exceptions.ValidationError; },
+valid:function(c,self,i) { return c.m[i] && this._emp(self) ? fu.invalid() : true; },
+screenV:function(c,indexes) { return Object.keys(indexes).some(function (i) { return v[i]&& v[i].call(this, c, this._s(indexes[i]), i) > 0; }, this); },
+sectionV:function(c,indexes) { return indexes.some(function (i) { return c.v[i]; }, this); },
+childV:function(c,indexes) { return indexes.every(function (i) { return c.v[i]; }, this); },
+hideRO:function(self,v) { return this._emp(self) ? 0 : v; }
+    };
+    var v = [/*0*/function(c,self,i) { if (!fu.sectionV.call(this,c,[2,3,4,5,6,7,8,9,1,11,12,10])) return 0;
+return 2; },/*1*/function(c,self,i) { if (!fu.sectionV.call(this,c,[2,3,4,5,6,7,8,9])) return 0;
+return 2; },/*2*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[2] === 0 || !c.f.enum(d.elements[2]).call(this,c,self,i)) return 0;if (!this.__in(c.e1["astatus"], 'deleted','cancelled','pending','suspended')) return 2;
+if (this.__in(c.e1["astatus"], 'complete','started','notdone')) return fu.hideRO.call(this,self,1);
+return -1; },/*3*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[3] === 0 || !c.f.enum(d.elements[3]).call(this,c,self,i)) return 0;if (this.__in(c.e1["astatus"], 'started')) return 3;
+if (this.__in(c.e1["astatus"], 'complete')) return fu.hideRO.call(this,self,1);
+return -1; },/*4*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return 3; },/*5*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[5] === 0 || !c.f.enum(d.elements[5]).call(this,c,self,i)) return 0;if (this.__in(c.e1["astatus"], 'started')) return 3;
+if (this.__in(c.e1["astatus"], 'complete','notdone')) return fu.hideRO.call(this,self,1);
+return -1; },/*6*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[6] === 0 || !c.f.enum(d.elements[6]).call(this,c,self,i)) return 0;if (this.__in(c.e1["astatus"], 'started')) return 3;
+if (this.__in(c.e1["astatus"], 'complete','notdone')) return fu.hideRO.call(this,self,1);
+return -1; },/*7*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[7] === 0 || !c.f.enum(d.elements[7]).call(this,c,self,i)) return 0;return 2; },/*8*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[8] === 0 || !c.f.enum(d.elements[8]).call(this,c,self,i)) return 0;return 2; },/*9*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (!this.__in(c.e1["astatus"], 'deleted','cancelled','pending','suspended')) return 2;
+if (this.__in(c.e1["astatus"], 'complete','started','notdone')) return fu.hideRO.call(this,self,1);
+return -1; },/*10*/function(c,self,i) { if (!fu.sectionV.call(this,c,[11,12])) return 0;
+return 2; },/*11*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[11] === 0 || !c.f.enum(d.elements[11]).call(this,c,self,i)) return 0;return 2; },/*12*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return 2; },/*13*/function(c,self,i) { if (!fu.sectionV.call(this,c,[2,3,4,5,6,7,8,9,1,11,12,10,0])) return 0;
+return 1; },/*14*/function(c,self,i) { if ((!this._emp(self))) return fu.hideRO.call(this,self,1);
+return 0; }];
+    var d = {
+        elements: [
+new S({"i":new I("section#l0idx91v_eeb3b370"),"t":"SOPORTE AAS","g":"section","|":0,"c":{"_c":[1,10],"_bs":[]},"v":v[0],"va":fu.valid}), 
+new S({"i":new I("section#l0iat9br_a9de0833"),"g":"section","|":0,"c":{"_c":[2,3,4,5,6,7,8,9],"_bs":[]},"v":v[1],"va":fu.valid}), 
+new E({"i":new I("CND_soproyectos","5385",1),"t":"Soporte Proyectos","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[2],"va":fu.valid}), 
+new E({"i":new I("CND_CND_que_Gestiona","5390",1),"t":"CND que Gestiona","g":"radiogroup","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[3],"va":fu.valid}), 
+new E({"i":new I("CND_Agente_que_Gestiona","6009",1),"t":"Agente que Gestiona","g":"input","|":0,"c":{"regex":""},"v":v[4],"va":fu.valid}), 
+new E({"i":new I("CND_Tipificacion","5615",1),"t":"Grupo  Tipificacion","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[5],"va":fu.valid}), 
+new E({"i":new I("CND_Causa escalamiento","5386",1),"t":"Causa Escalamiento Proyecto","g":"dropdown","|":0,"c":{"enum":[new V(["21"],function(c,self,i) { return this.__in(c.e1["5615"], '11'); }),new V(["t", "r", "19", "20", "e"],function(c,self,i) { return this.__in(c.e1["5615"], '1'); }),new V(["3", "q", "104", "105"],function(c,self,i) { return this.__in(c.e1["5615"], '10'); }),new V(["1", "z", "\u00f1", "13"],function(c,self,i) { return this.__in(c.e1["5615"], '4'); }),new V(["o"],function(c,self,i) { return this.__in(c.e1["5615"], '12'); }),new V(["17", "14", "15", "16"],function(c,self,i) { return this.__in(c.e1["5615"], '13'); }),new V(["40", "d", "S", "f", "i", "12", "O", "P", "A"],function(c,self,i) { return this.__in(c.e1["5615"], '2'); }),new V(["j"],function(c,self,i) { return this.__in(c.e1["5615"], '14'); }),new V(["v", "b", "4", "7"],function(c,self,i) { return this.__in(c.e1["5615"], '5'); }),new V(["06", "10", "04", "30"],function(c,self,i) { return this.__in(c.e1["5615"], '7'); }),new V(["31", "x", "08"],function(c,self,i) { return this.__empty(c.e1["5615"]); }),new V(["11", "6", "05"],function(c,self,i) { return this.__in(c.e1["5615"], '8'); }),new V(["09", "07", "101", "5"],function(c,self,i) { return this.__in(c.e1["5615"], '9'); }),new V(["8"],function(c,self,i) { return this.__in(c.e1["5615"], '16'); }),new V(["g", "2", "l", "h", "k"],function(c,self,i) { return this.__in(c.e1["5615"], '17'); })],"titles":[]},"v":v[6],"va":fu.valid}), 
+new E({"i":new I("XA_tiemposoporte","5518",1),"t":"Tiempo duracion Soporte","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[7],"va":fu.valid}), 
+new E({"i":new I("CND_dio soluci\u00f3n ","5614",1),"t":"El \u00e1rea a la cual se escal\u00f3 dio soluci\u00f3n?","g":"radiogroup","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[8],"va":fu.valid}), 
+new E({"i":new I("CND_Notas_Proyectos","5387",1),"t":"Notas de Gestion","g":"textarea","|":0,"c":{"regex":"","rows":5},"v":v[9],"va":fu.valid}), 
+new S({"i":new I("section#l0icuyue_3ef92482"),"t":"SEGUIMIENTO VISITA","g":"section","|":1,"c":{"_c":[11,12],"_bs":[]},"v":v[10],"va":fu.valid}), 
+new E({"i":new I("XA_causademora","5519",1),"t":"Causa demora en VT","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[11],"va":fu.valid}), 
+new E({"i":new I("XA_CUAL","5520",1),"t":"Otro? Cual?","g":"textarea","|":0,"c":{"regex":"","rows":2},"v":v[12],"va":fu.valid}), 
+new S({"i":new I("wrapperColumnManager0"),"g":"section_column_manager","|":0,"c":{"_c":[0],"_bs":[]},"v":v[13],"va":fu.valid}), 
+new E({"i":new I("restore_draft-289","",1000),"t":"Restaurar borrador","g":"restore_draft","|":0,"c":{"additionLabel":"Guardado a las {TIME}"},"v":v[14],"va":fu.valid,"p":0})
+        ],
+        title: "SOPORTE AAS",
+        label: "SOPORTE_AAS",
+        formId: "289",
+        version: "8",  
+        content: [14,13],
+        actions: [],
+        topology: new app.form.GraphTopology([14,12,11,10,9,8,7,5,6,4,3,2,1,0,13], [null,[13,3,14],[13,3,14],[13,14],[13,12,14],[13,12,14],[13,12,14],[13,12,8,14],[13,12,14],[13,12,14],[13,12,14],[13,12,14],[13,14],[14],null]),
+        isSubmittable: function(c,self,i) { return 0 || !(((c.pc || []).indexOf(true) !== -1) || 0); },
+        showLinks: fu.links,
+        showSubmitLine: fu.subline
+    };
+    app.getFormCollection().register(new app.form.Form(d));
+    
+    
+} catch (error) {
+    console && console.error(error);
+    app.getFormCollection().logError(error);
+}
+})(app,app.form.Identity,app.form.FormElement,app.form.FormSection,app.form.enumeration.Visibility,app.form.enumeration.KeyVisibility,app.form.enumeration.Title);
+(function (app, I, EE, E, EB, EM, O, OX, G) {
+    ([]).forEach(function (r, e) {
+        try {
+            r.registerEnumeration(e, "SOPORTE_AAS");
+        } catch (error) {
+            console && console.error(error);
+            r.logError(error);
+        }            
+    }.bind(null, app.getFormCollection()));
+})(app, app.form.Identity, app.form.enumeration.EnumerationWithEmptyValue,app.form.enumeration.Enumeration,app.form.enumeration.BitEnumeration, app.form.enumeration.EnumerationWithMultipleValues, app.form.enumeration.Option,app.form.enumeration.InactiveOption,app.form.enumeration.Group);

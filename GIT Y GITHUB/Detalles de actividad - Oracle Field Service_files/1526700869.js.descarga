@@ -1,0 +1,56 @@
+(function (app,I,E,S,A,V,ET) {
+try {
+    var fu = {
+subline:function(c,self,i) { return true; },
+links:function(c) { return !c.e1000.isWritable; },
+check:function(c,e,k) { if (this._emp(c["e"+e] && c["e"+e][k])) throw new app.form.exceptions.EntityIsNotAllowed(e); },
+invalid:function(c,self,i) { throw new app.form.exceptions.ValidationError; },
+valid:function(c,self,i) { return c.m[i] && this._emp(self) ? fu.invalid() : true; },
+screenV:function(c,indexes) { return Object.keys(indexes).some(function (i) { return v[i]&& v[i].call(this, c, this._s(indexes[i]), i) > 0; }, this); },
+sectionV:function(c,indexes) { return indexes.some(function (i) { return c.v[i]; }, this); },
+childV:function(c,indexes) { return indexes.every(function (i) { return c.v[i]; }, this); },
+hideRO:function(self,v) { return this._emp(self) ? 0 : v; }
+    };
+    var v = [/*0*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1])) return 0;
+return 2; },/*1*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*2*/function(c,self,i) { if (!fu.sectionV.call(this,c,[3])) return 0;
+return 2; },/*3*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*4*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,0,3,2])) return 0;
+return 1; },/*5*/function(c,self,i) { if ((!this._emp(self))) return fu.hideRO.call(this,self,1);
+return 0; }];
+    var d = {
+        elements: [
+new S({"i":new I("section#element_16"),"t":"Actividades de Facturaci\u00f3n","g":"section","|":0,"c":{"_c":[1],"_bs":[]},"v":v[0],"va":fu.valid}), 
+new E({"i":new I("XA_ActividadesAsociadas_Manage","786",1),"t":" ","g":"xslt","|":0,"v":v[1],"va":fu.valid}), 
+new S({"i":new I("section#ko1j5mxr_ffdcdba8"),"t":"Actividades de Reemplazo","g":"section","|":1,"c":{"_c":[3],"_bs":[]},"v":v[2],"va":fu.valid}), 
+new E({"i":new I("XA_ActividadesReemplazas_Manage","787",1),"t":" ","g":"xslt","|":0,"v":v[3],"va":fu.valid}), 
+new S({"i":new I("wrapperColumnManager0"),"g":"section_column_manager","|":0,"c":{"_c":[0,2],"_bs":[]},"v":v[4],"va":fu.valid}), 
+new E({"i":new I("restore_draft-195","",1000),"t":"Restaurar borrador","g":"restore_draft","|":0,"c":{"additionLabel":"Guardado a las {TIME}"},"v":v[5],"va":fu.valid,"p":0})
+        ],
+        title: "Acitivty facturaci\u00f3n original",
+        label: "acitivty_facturacionO",
+        formId: "195",
+        version: "8",  
+        content: [5,4],
+        actions: [],
+        topology: new app.form.GraphTopology([5,3,2,1,0,4], [null,[2,5],[5],[4,5],[5],null]),
+        isSubmittable: function(c,self,i) { return 0 || !(((c.pc || []).indexOf(true) !== -1) || 0); },
+        showLinks: fu.links,
+        showSubmitLine: fu.subline
+    };
+    app.getFormCollection().register(new app.form.Form(d));
+    
+    
+} catch (error) {
+    console && console.error(error);
+    app.getFormCollection().logError(error);
+}
+})(app,app.form.Identity,app.form.FormElement,app.form.FormSection,app.form.enumeration.Visibility,app.form.enumeration.KeyVisibility,app.form.enumeration.Title);
+(function (app, I, EE, E, EB, EM, O, OX, G) {
+    ([]).forEach(function (r, e) {
+        try {
+            r.registerEnumeration(e, "acitivty_facturacionO");
+        } catch (error) {
+            console && console.error(error);
+            r.logError(error);
+        }            
+    }.bind(null, app.getFormCollection()));
+})(app, app.form.Identity, app.form.enumeration.EnumerationWithEmptyValue,app.form.enumeration.Enumeration,app.form.enumeration.BitEnumeration, app.form.enumeration.EnumerationWithMultipleValues, app.form.enumeration.Option,app.form.enumeration.InactiveOption,app.form.enumeration.Group);

@@ -1,0 +1,3 @@
+Es el "motor" de JavaScript
+
+-Este motor, interpresa el codigo y lo traduce O COMPILA a lenguaje BINARIO

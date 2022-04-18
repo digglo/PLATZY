@@ -1,0 +1,118 @@
+define(['ojs/ojcore' ,'knockout', 'signals','jquery','promise','ojs/ojknockout'
+	], function(oj, ko, signals, $) {
+
+			var getUrl = function(url){
+				return url+'&output=ajax'
+		  	};
+		  	var getSID = function(){
+			    if (typeof _DATA == 'undefined'){
+			        _DATA = {};
+			    }
+			    if (!_DATA.sessid){
+			        var current_win = window;
+			        do{
+			            _DATA.sessid = typeof current_win._DATA != 'undefined' &&
+			                typeof current_win._DATA.sessid != 'undefined' &&
+			                current_win._DATA.sessid ?
+			                    current_win._DATA.sessid :
+			                    '';
+			            current_win = current_win.top;
+			        }
+			        while (current_win && !_DATA.sessid);
+			        if (!_DATA.sessid){
+			            _DATA.sessid = typeof parent._DATA != 'undefined' &&
+			                typeof parent._DATA.sessid != 'undefined' &&
+			                parent._DATA.sessid ?
+			                    parent._DATA.sessid :
+			                    '';
+			        }
+			    }
+			    return _DATA.sessid;
+			};
+
+			var anticache = function(){
+				return (new Date()).getTime();
+			};
+
+			var routeURL = function(controller, method){
+                var url;
+                if (_DATA.is_mobility_app == true) {
+                    url = '?m=' + controller;
+                    if (method){
+                        url += '&a=' + method + '&itype=manage';
+                    }
+                } else {
+                    url = '?controller=' + controller;
+                    if (method){
+                        url += '&method=' + method;
+                    }
+                }
+		        return url;
+		    };
+
+            /**
+             * @class HttpService
+             * @constructor
+             */
+			var HttpService = function(req){
+				this.req = req;
+			};
+			HttpService.prototype.options = {};
+			HttpService.prototype.params = {};
+			HttpService.prototype.url = "";
+			HttpService.prototype.reqObj = "";
+			HttpService.prototype.send = function(url){
+				var sessid = this.getSID();
+		        this.params[sessid.substr(0, sessid.indexOf('='))] = sessid.substr(
+		            sessid.indexOf('=') + 1,
+		            sessid.length - sessid.indexOf('=')
+		        );
+		        if(this.req){
+		        	this.reqObj = routeURL(this.req.controller, this.req.method)
+		        }
+				var req =  $.ajax({
+					type: "POST",
+	                url:this.reqObj + getUrl(url || this.url),
+	                data:this.params,
+	                dataType: 'JSON',
+	                success: function(data){
+	                   // promise returns the data
+	                },
+	                error: function(data){
+	                	// signal to emit error data
+                                // show indicator on connection error
+                                if(data.status === 0){
+                                    set_indicator(1);
+                                }
+	                }
+	            });
+	            return req;
+			}
+
+			HttpService.prototype.getSID = function(){
+				return getSID();
+			}
+			HttpService.prototype.download = function(url){
+				var iframe = document.getElementById('downloadIframe');
+				if(!iframe){
+					var iframe = document.createElement('iframe');
+					iframe.style.position = 'absolute';
+					iframe.style.left = '-1000px';
+					iframe.style.width = 0;
+					iframe.style.height = 0;
+					iframe.setAttribute('id', 'downloadIframe');
+					iframe.setAttribute('src', 'javascript:false');
+					document.body.appendChild(iframe);
+				}
+
+            if(_DATA.is_mobility_app) {
+                url = this.url + '&' + getSID() + '&' + anticache();
+            } else {
+                url = 'download/' + this.url + '&' + anticache();
+            }
+		    iframe.document ?
+		        iframe.document.location = url :
+		        iframe.src = url;
+			}
+			return HttpService;
+	});

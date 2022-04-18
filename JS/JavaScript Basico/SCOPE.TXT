@@ -1,0 +1,34 @@
+SCOPE:
+Es el alcance de las variables (dependiendo de donde declares o inicialices una vairable se 
+tendra acceso a ella o no)
+
+TIPOS:
+
+-GLOBAL
+-LOCAL
+
+SCOPE GLOBAL:
+
+Existen todas las funciones y las variables
+
+SCOPE LOCAL:
+
+Existen dentro de la funcion y no afuera
+
+
+EJEMPLO
+
+VAR NOMBRE = "CAMILO";
+
+funcion nombreCompleto (nombre){
+
+ let apellido = "reina";
+ return " ${nombre} ${apellido}";
+
+ alert(apellido); // bota "reina"
+
+}
+
+nombreCompleto();
+
+alert(apellido); // bota que no esta definida

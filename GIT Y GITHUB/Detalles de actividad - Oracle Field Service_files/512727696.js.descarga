@@ -1,0 +1,307 @@
+(function (app,I,E,S,A,V,ET) {
+try {
+    var fu = {
+subline:function(c,self,i) { return true; },
+links:function(c) { return !c.e1000.isWritable; },
+check:function(c,e,k) { if (this._emp(c["e"+e] && c["e"+e][k])) throw new app.form.exceptions.EntityIsNotAllowed(e); },
+invalid:function(c,self,i) { throw new app.form.exceptions.ValidationError; },
+valid:function(c,self,i) { return c.m[i] && this._emp(self) ? fu.invalid() : true; },
+screenV:function(c,indexes) { return Object.keys(indexes).some(function (i) { return v[i]&& v[i].call(this, c, this._s(indexes[i]), i) > 0; }, this); },
+sectionV:function(c,indexes) { return indexes.some(function (i) { return c.v[i]; }, this); },
+childV:function(c,indexes) { return indexes.every(function (i) { return c.v[i]; }, this); },
+hideRO:function(self,v) { return this._emp(self) ? 0 : v; }
+    };
+    var v = [/*0*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,2,3,4,6,7,8,9,10,11,12,13,14,5,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,15,38,39,40,41,42,37,44,45,46,47,43,49,50,51,52,48,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85])) return 0;
+return 2; },/*1*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[1] === 0 || !c.f.enum(d.elements[1]).call(this,c,self,i)) return 0;return 3; },/*2*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '3') || this.__in(c.e5["srtype"], '1')) return 2;
+return -1; },/*3*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[3] === 0 || !c.f.enum(d.elements[3]).call(this,c,self,i)) return 0;if (this.__in(c.e5["srtype"], '4')) return 3;
+return -1; },/*4*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["460"], '2') && this.__in(c.e5["srtype"], '4')) return 3;
+return -1; },/*5*/function(c,self,i) { if (!fu.sectionV.call(this,c,[6,7,8,9,10,11,12,13,14])) return 0;
+return 2; },/*6*/function(c,self,i) { if (this.__in(c.e5["srtype"], '29')) return 1;
+return -1; },/*7*/function(c,self,i) { if (this.__in(c.e5["srtype"], '29')) return 1;
+return -1; },/*8*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[8] === 0 || !c.f.enum(d.elements[8]).call(this,c,self,i)) return 0;if (this.__in(c.e5["srtype"], '29')) return 2;
+return -1; },/*9*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '29') && this.__in(c.e5["253"], '1')) return 2;
+return -1; },/*10*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[10] === 0 || !c.f.enum(d.elements[10]).call(this,c,self,i)) return 0;if (this.__in(c.e5["srtype"], '8','29')) return 2;
+return -1; },/*11*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '29')) return 2;
+return -1; },/*12*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '29')) return 2;
+return -1; },/*13*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '8','29')) return 2;
+return -1; },/*14*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '29')) return 2;
+return -1; },/*15*/function(c,self,i) { if (!fu.sectionV.call(this,c,[16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36])) return 0;
+return 2; },/*16*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*17*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*18*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*19*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*20*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*21*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*22*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*23*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*24*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*25*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*26*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*27*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*28*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*29*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*30*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*31*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*32*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*33*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*34*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*35*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*36*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '22')) return 2;
+return -1; },/*37*/function(c,self,i) { if (!fu.sectionV.call(this,c,[38,39,40,41,42])) return 0;
+return 2; },/*38*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '8')) return 2;
+return -1; },/*39*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '8')) return 2;
+return -1; },/*40*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '8')) return 2;
+return -1; },/*41*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '8')) return 2;
+return -1; },/*42*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '8')) return 2;
+return -1; },/*43*/function(c,self,i) { if (!fu.sectionV.call(this,c,[44,45,46,47])) return 0;
+return 2; },/*44*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[44] === 0 || !c.f.enum(d.elements[44]).call(this,c,self,i)) return 0;if (this.__in(c.e5["srtype"], '9','32')) return 2;
+return -1; },/*45*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '9')) return 2;
+return -1; },/*46*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '32') || this.__in(c.e5["srtype"], '9') && (this.__in(c.e1["aworktype"], '-1') || this.__in(c.e1._("aworktype").groupId, '-1'))) return 2;
+return -1; },/*47*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '9','32')) return 2;
+return -1; },/*48*/function(c,self,i) { if (!fu.sectionV.call(this,c,[49,50,51,52])) return 0;
+return 2; },/*49*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '19')) return 2;
+return -1; },/*50*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '19')) return 2;
+return -1; },/*51*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[51] === 0 || !c.f.enum(d.elements[51]).call(this,c,self,i)) return 0;if (this.__in(c.e5["srtype"], '19')) return 2;
+return -1; },/*52*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[52] === 0 || !c.f.enum(d.elements[52]).call(this,c,self,i)) return 0;if (this.__in(c.e5["srtype"], '19')) return 2;
+return -1; },/*53*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[53] === 0 || !c.f.enum(d.elements[53]).call(this,c,self,i)) return 0;if (this.__in(c.e5["srtype"], '10')) return 2;
+return -1; },/*54*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '10')) return 2;
+return -1; },/*55*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '10')) return 2;
+return -1; },/*56*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '13')) return 2;
+return -1; },/*57*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '13')) return 2;
+return -1; },/*58*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '33')) return 2;
+return -1; },/*59*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '33')) return 2;
+return -1; },/*60*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '33')) return 2;
+return -1; },/*61*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '33')) return 2;
+return -1; },/*62*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '33')) return 2;
+return -1; },/*63*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '33')) return 2;
+return -1; },/*64*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '13')) return 2;
+return -1; },/*65*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '13')) return 2;
+return -1; },/*66*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '13')) return 2;
+return -1; },/*67*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '13')) return 2;
+return -1; },/*68*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '30')) return 2;
+return -1; },/*69*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '12')) return 2;
+return -1; },/*70*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '30')) return 2;
+return -1; },/*71*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '12')) return 2;
+return -1; },/*72*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '34')) return 2;
+return -1; },/*73*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '12')) return 2;
+return -1; },/*74*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '13')) return 2;
+return -1; },/*75*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '12')) return 2;
+return -1; },/*76*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '13')) return 2;
+return -1; },/*77*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '30')) return 2;
+return -1; },/*78*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '30')) return 2;
+return -1; },/*79*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '31')) return 2;
+return -1; },/*80*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '31')) return 2;
+return -1; },/*81*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '31')) return 2;
+return -1; },/*82*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '31')) return 2;
+return -1; },/*83*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '31')) return 2;
+return -1; },/*84*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '31')) return 2;
+return -1; },/*85*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '12','13','30','31','32','33','34')) return 2;
+return -1; },/*86*/function(c,self,i) { if (!fu.sectionV.call(this,c,[87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107])) return 0;
+return 2; },/*87*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[87] === 0 || !c.f.enum(d.elements[87]).call(this,c,self,i)) return 0;if (this.__in(c.e5["srtype"], '35')) return 2;
+return -1; },/*88*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35')) return 2;
+return -1; },/*89*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35')) return 2;
+return -1; },/*90*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'BA','CV','TVA','TVATSC','TVDTH','TVDVB','VOZ')) return 2;
+return -1; },/*91*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'BA','CV','TVA','TVATSC','TVDTH','TVDVB','VOZ')) return 2;
+return -1; },/*92*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'BA','CV','TVA','TVATSC','TVDTH','TVDVB','VOZ')) return 2;
+return -1; },/*93*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'BA','CV','TVA','TVATSC','TVDTH','TVDVB','VOZ')) return 2;
+return -1; },/*94*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'BA','CV','TVA','TVATSC','TVDTH','TVDVB','VOZ')) return 2;
+return -1; },/*95*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'BA','CV','TVA','TVATSC','TVDTH','TVDVB','VOZ')) return 2;
+return -1; },/*96*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'BA','VOZ')) return 2;
+return -1; },/*97*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["712"], 'BA','CV','TVA','TVATSC','TVDTH','TVDVB','VOZ') && this.__in(c.e5["srtype"], '35')) return 2;
+return -1; },/*98*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["712"], 'TVDVB','TVATSC','CV','BA','VOZ') && this.__in(c.e5["srtype"], '35')) return 2;
+return -1; },/*99*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'TVA','TVDVB','TVATSC','TVDTH')) return 2;
+return -1; },/*100*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'TVA','TVDVB','TVATSC','TVDTH')) return 2;
+return -1; },/*101*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["712"], 'TVDVB','TVATSC','CV','TVDTH','BA','VOZ') && this.__in(c.e5["srtype"], '35')) return 2;
+return -1; },/*102*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["712"], 'TVDVB','TVATSC','CV','TVDTH','BA','VOZ') && this.__in(c.e5["srtype"], '35')) return 2;
+return -1; },/*103*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'VOZ')) return 2;
+return -1; },/*104*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'TVDVB','TVATSC','CV','TVDTH','BA','VOZ')) return 2;
+return -1; },/*105*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'TVA','TVDVB','TVATSC','CV','TVDTH')) return 2;
+return -1; },/*106*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'BA')) return 2;
+return -1; },/*107*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (this.__in(c.e5["srtype"], '35') && this.__in(c.e5["712"], 'VOZ')) return 2;
+return -1; },/*108*/function(c,self,i) { if (!fu.sectionV.call(this,c,[110,109,112,111,114,113,116,115,118,117,120,119,122,121,124,123,126,125,128,127])) return 0;
+return 2; },/*109*/function(c,self,i) { if (!fu.sectionV.call(this,c,[110])) return 0;
+return 2; },/*110*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[110] === 0 || !c.f.enum(d.elements[110]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*111*/function(c,self,i) { if (!fu.sectionV.call(this,c,[112])) return 0;
+return 2; },/*112*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[112] === 0 || !c.f.enum(d.elements[112]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*113*/function(c,self,i) { if (!fu.sectionV.call(this,c,[114])) return 0;
+return 2; },/*114*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[114] === 0 || !c.f.enum(d.elements[114]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*115*/function(c,self,i) { if (!fu.sectionV.call(this,c,[116])) return 0;
+return 2; },/*116*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[116] === 0 || !c.f.enum(d.elements[116]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*117*/function(c,self,i) { if (!fu.sectionV.call(this,c,[118])) return 0;
+return 2; },/*118*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[118] === 0 || !c.f.enum(d.elements[118]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*119*/function(c,self,i) { if (!fu.sectionV.call(this,c,[120])) return 0;
+return 2; },/*120*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[120] === 0 || !c.f.enum(d.elements[120]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*121*/function(c,self,i) { if (!fu.sectionV.call(this,c,[122])) return 0;
+return 2; },/*122*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[122] === 0 || !c.f.enum(d.elements[122]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*123*/function(c,self,i) { if (!fu.sectionV.call(this,c,[124])) return 0;
+return 2; },/*124*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[124] === 0 || !c.f.enum(d.elements[124]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*125*/function(c,self,i) { if (!fu.sectionV.call(this,c,[126])) return 0;
+return 2; },/*126*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[126] === 0 || !c.f.enum(d.elements[126]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*127*/function(c,self,i) { if (!fu.sectionV.call(this,c,[128])) return 0;
+return 2; },/*128*/function(c,self,i) { fu.check.call(this,c,5,"srid"); if (c.n[128] === 0 || !c.f.enum(d.elements[128]).call(this,c,self,i)) return 0;if (this.__in(c.e5["460"], '1')) return 3;
+return -1; },/*129*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,2,3,4,6,7,8,9,10,11,12,13,14,5,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,15,38,39,40,41,42,37,44,45,46,47,43,49,50,51,52,48,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,0,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,86,110,109,112,111,114,113,116,115,118,117,120,119,122,121,124,123,126,125,128,127,108])) return 0;
+return 1; },/*130*/function(c,self,i) { if ((!this._emp(self))) return fu.hideRO.call(this,self,1);
+return 0; }];
+    var d = {
+        elements: [
+new S({"i":new I("section#124189"),"g":"section","|":0,"c":{"_c":[1,2,3,4,5,15,37,43,48,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85],"_bs":[]},"v":v[0],"va":fu.valid}), 
+new E({"i":new I("srtype","",5),"t":"Tipo","g":"dropdown","|":0,"c":{"enum":[new V(["10", "35"]),new V(["13", "31", "33", "30", "12", "34"],function(c,self,i) { return this.__in(c.e1["astatus"], 'started'); }),new V(["32"],function(c,self,i) { return this.__in(c.e1["astatus"], 'started') && (this.__in(c.e1["aworktype"], '113','-1') || this.__in(c.e1._("aworktype").groupId, '113','-1')); }),new V(["22", "9"],function(c,self,i) { return this.__in(c.e1["astatus"], 'started') && (this.__in(c.e1["aworktype"], '78','111') || this.__in(c.e1._("aworktype").groupId, '78','111')); }),new V(["8", "29"],function(c,self,i) { return this.__in(c.e1["astatus"], 'started') && (this.__in(c.e1["aworktype"], '78','111','113','-1') || this.__in(c.e1._("aworktype").groupId, '78','111','113','-1')); }),new V(["4"],function(c,self,i) { return (this.__in(c.e1["aworktype"], '113','-1') || this.__in(c.e1._("aworktype").groupId, '113','-1')) && this.__in(c.e1["astatus"], 'started'); }),new V(["111"],function(c,self,i) { return (this.__in(c.e1["aworktype"], '334','335','318','309','305','317','258','336','339','307','333','344','342','343','257','316','315','259','263','338','262','337','308','261','306') || this.__in(c.e1._("aworktype").groupId, '334','335','318','309','305','317','258','336','339','307','333','344','342','343','257','316','315','259','263','338','262','337','308','261','306')) && this.__in(c.e1["astatus"], 'complete'); }),new V(["115"],function(c,self,i) { return this.__in(c.e1["astatus"], 'complete') && !(this.__in(c.e1["aworktype"], '-2','334','335','318','309','305','317','258','336','339','307','333','344','342','343','257','316','315','259','263','338','262','337','308','261','306','77','78') || this.__in(c.e1._("aworktype").groupId, '-2','334','335','318','309','305','317','258','336','339','307','333','344','342','343','257','316','315','259','263','338','262','337','308','261','306','77','78')); })],"titles":[]},"v":v[1],"va":fu.valid}), 
+new E({"i":new I("sr_body","15",5),"t":"Descripci\u00f3n","g":"textarea","|":0,"c":{"regex":"","rows":5},"v":v[2],"va":fu.valid}), 
+new E({"i":new I("sr_TipoTransaccionAlturas","460",5),"t":"Acciones","g":"dropdown","|":0,"c":{"enum":[new V(["3", "2"],function(c,self,i) { return !this.__empty(c.e1["648"]); }),new V(["1"],function(c,self,i) { return this.__empty(c.e1["648"]); })],"titles":[]},"v":v[3],"va":fu.valid}), 
+new E({"i":new I("A_AgregarTiempoActividadPeligrosa","250",5),"t":"Actividad Peligrosa Agregar Tiempo","g":"number","|":0,"c":{"regex":""},"v":v[4],"va":fu.valid}), 
+new S({"i":new I("section#124194"),"g":"section","|":0,"c":{"_c":[6,7,8,9,10,11,12,13,14],"_bs":[]},"v":v[5],"va":fu.valid}), 
+new E({"i":new I("text#124195","",11),"t":"Raz\u00f3n Llamada: OPE - Operaciones","g":"text","|":0,"v":v[6],"va":fu.valid}), 
+new E({"i":new I("text#124196","",11),"t":"Detalles de la Raz\u00f3n: DAT - Da\u00f1os a Terceros","g":"text","|":0,"v":v[7],"va":fu.valid}), 
+new E({"i":new I("sr_PQRSource","253",5),"t":"Origen PQR","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[8],"va":fu.valid}), 
+new E({"i":new I("sr_PQRTicket","254",5),"t":"N\u00famero de Tiquete PQR","g":"input","|":0,"c":{"regex":""},"v":v[9],"va":fu.valid}), 
+new E({"i":new I("sr_TipoDanoTercero","419",5),"t":"Tipo de Da\u00f1o","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[10],"va":fu.valid}), 
+new E({"i":new I("sr_Solucion_PQR","684",5),"t":"Soluci\u00f3n PQR","g":"input","|":0,"c":{"regex":""},"v":v[11],"va":fu.valid}), 
+new E({"i":new I("sr_Entrega_PQR","685",5),"t":"Entrega (Notas de Aceptaci\u00f3n)","g":"input","|":0,"c":{"regex":""},"v":v[12],"va":fu.valid}), 
+new E({"i":new I("sr_Observaciones_PQR","418",5),"t":"Observaciones PQR","g":"input","|":0,"c":{"regex":""},"v":v[13],"va":fu.valid}), 
+new E({"i":new I("sr_AdjuntoPQR","686",5),"t":"Adjunto PQR","g":"file","|":0,"c":{"mime_types":["image\/gif","image\/jpeg","text\/html","video\/mpeg","audio\/x-wav","application\/zip","application\/vnd.ms-excel","application\/msword","application\/pdf"],"file_size_limit":"5"},"v":v[14],"va":fu.valid}), 
+new S({"i":new I("section#124204"),"t":"Tipo Nota de Supervisi\u00f3n","g":"section","|":0,"c":{"_c":[16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36],"_bs":[]},"v":v[15],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison8","593",5),"t":"1. Cancelaci\u00f3n Permisos - OPE6","g":"checkbox","|":0,"v":v[16],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison7","592",5),"t":"2. Cncelaci\u00f3n no Justificada - OPE5","g":"checkbox","|":0,"v":v[17],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison14","599",5),"t":" 3. Consumo Alcohol-Drogas - RRHH4","g":"checkbox","|":0,"v":v[18],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison15","600",5),"t":"4. Falta de supervisores - OPE13","g":"checkbox","|":0,"v":v[19],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison16","601",5),"t":"5. Incumplimiento procesos - OPE14","g":"checkbox","|":0,"v":v[20],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison4","589",5),"t":"6. Incumplimiento visita - OPE2 ","g":"checkbox","|":0,"v":v[21],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison3","588",5),"t":" 7. Informacion de los sistemas - OPE1","g":"checkbox","|":0,"v":v[22],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison10","595",5),"t":"8. Mal estado Veh\u00edculo - OPE8","g":"checkbox","|":0,"v":v[23],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison17","602",5),"t":"9. Generacion da\u00f1os a terceros - OPE15","g":"checkbox","|":0,"v":v[24],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison9","594",5),"t":"10. No Uso Infraestructura T\u00e9cnica - OPE7","g":"checkbox","|":0,"v":v[25],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison6","591",5),"t":"11. Incumplimiento SISO - OPE4","g":"checkbox","|":0,"v":v[26],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison13","598",5),"t":"12. Sin Carn\u00e9 - RRHH3","g":"checkbox","|":0,"v":v[27],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison2","587",5),"t":"13. Sin Certificaci\u00f3n Alturas (vencida) - RRHH 2","g":"checkbox","|":0,"v":v[28],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison1","586",5),"t":"14. Sin Certificaci\u00f3n Claro (vencida) - RRHH 1","g":"checkbox","|":0,"v":v[29],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison12","597",5),"t":"15. Sin Dotaci\u00f3n - OPE10 ","g":"checkbox","|":0,"v":v[30],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison11","596",5),"t":"16. Sin imagen Corporativa - OPE9","g":"checkbox","|":0,"v":v[31],"va":fu.valid}), 
+new E({"i":new I("sr_NotaSupervison5","590",5),"t":"17. Trabajos NO OK - OPE3","g":"checkbox","|":0,"v":v[32],"va":fu.valid}), 
+new E({"i":new I("sr_DocumentacionPenalizacion","688",5),"t":"Documentaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[33],"va":fu.valid}), 
+new E({"i":new I("sr_Adjunto1","583",5),"t":"Adjunto 1","g":"image","|":0,"c":{"options":"","mime_types":["image\/jpeg","image\/png"],"max_image_size_x":500,"max_image_size_y":500},"v":v[34],"va":fu.valid}), 
+new E({"i":new I("sr_Adjunto3","584",5),"t":"Adjunto 3","g":"image","|":0,"c":{"options":"","mime_types":["image\/jpeg","image\/png"],"max_image_size_x":500,"max_image_size_y":500},"v":v[35],"va":fu.valid}), 
+new E({"i":new I("sr_Adjunto2","585",5),"t":"Adjunto 2","g":"image","|":0,"c":{"options":"","mime_types":["image\/jpeg","image\/png"],"max_image_size_x":500,"max_image_size_y":500},"v":v[36],"va":fu.valid}), 
+new S({"i":new I("section#124226"),"t":"Da\u00f1os a Terceros","g":"section","|":0,"c":{"_c":[38,39,40,41,42],"_bs":[]},"v":v[37],"va":fu.valid}), 
+new E({"i":new I("sr_DescripcionDano","367",5),"t":"Descripci\u00f3n Da\u00f1o","g":"input","|":0,"c":{"regex":""},"v":v[38],"va":fu.valid}), 
+new E({"i":new I("sr_SolucionDano","690",5),"t":"Soluci\u00f3n Da\u00f1o","g":"input","|":0,"c":{"regex":""},"v":v[39],"va":fu.valid}), 
+new E({"i":new I("sr_NombreAceptaArreglo","691",5),"t":"Nombre Quien Recibe\/Acepta Dano","g":"input","|":0,"c":{"regex":""},"v":v[40],"va":fu.valid}), 
+new E({"i":new I("sr_TelefonoDanoTercero","692",5),"t":"Tel\u00e9fono","g":"input","|":0,"c":{"regex":""},"v":v[41],"va":fu.valid}), 
+new E({"i":new I("sr_AdjuntoDanoTerceros","694",5),"t":"Adjunto","g":"file","|":0,"c":{"mime_types":["image\/gif","image\/jpeg","text\/html","text\/plain","video\/mpeg","application\/zip","audio\/x-wav","application\/vnd.ms-excel","application\/pdf","application\/msword"],"file_size_limit":"5"},"v":v[42],"va":fu.valid}), 
+new S({"i":new I("section#124232"),"t":"Fraude","g":"section","|":0,"c":{"_c":[44,45,46,47],"_bs":[]},"v":v[43],"va":fu.valid}), 
+new E({"i":new I("sr_TipoFraude","423",5),"t":"Tipo Fraude","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[44],"va":fu.valid}), 
+new E({"i":new I("sr_PersonaReporta_Fraude","695",5),"t":"Persona Reporta","g":"input","|":0,"c":{"regex":""},"v":v[45],"va":fu.valid}), 
+new E({"i":new I("sr_DescripcionFraude","365",5),"t":"Descripci\u00f3n Fraude","g":"input","|":0,"c":{"regex":""},"v":v[46],"va":fu.valid}), 
+new E({"i":new I("sr_AdjutoFraude","696",5),"t":"Adjunto Fraude","g":"file","|":0,"c":{"mime_types":["image\/jpeg","image\/gif","text\/html","video\/mpeg","text\/plain","audio\/x-wav","application\/zip","application\/vnd.ms-excel","application\/pdf","application\/msword"],"file_size_limit":"5"},"v":v[47],"va":fu.valid}), 
+new S({"i":new I("section#124237"),"t":"Recoger Otro Equipo","g":"section","|":0,"c":{"_c":[49,50,51,52],"_bs":[]},"v":v[48],"va":fu.valid}), 
+new E({"i":new I("sr_NumeroSerie_OtroEquipo","299",5),"t":"N\u00famero de Serie","g":"input","|":0,"c":{"regex":""},"v":v[49],"va":fu.valid}), 
+new E({"i":new I("sr_notas_OtroEquipo","836",5),"t":"Notas Otro Equipo","g":"input","|":0,"c":{"regex":""},"v":v[50],"va":fu.valid}), 
+new E({"i":new I("sr_Fabricante_OtroEquipo","838",5),"t":"Fabricante Otro Equipo","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[51],"va":fu.valid}), 
+new E({"i":new I("sr_Tipo_OtroEquipo","837",5),"t":"Tipo Otro Equipo","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[52],"va":fu.valid}), 
+new E({"i":new I("sr_TipoEmergencia","369",5),"t":"Tipo de Emergencia","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[53],"va":fu.valid}), 
+new E({"i":new I("sr_ObservacionesEmergencia","373",5),"t":"Observaciones","g":"input","|":0,"c":{"regex":""},"v":v[54],"va":fu.valid}), 
+new E({"i":new I("sr_AdjuntoEmergencia","644",5),"t":"Adjunto Emergencia","g":"image","|":0,"c":{"options":"","mime_types":["image\/jpeg","image\/png"],"max_image_size_x":500,"max_image_size_y":500},"v":v[55],"va":fu.valid}), 
+new E({"i":new I("sr_CuentaMatriz_Actualizar","376",5),"t":"Actualizar Cuenta Matriz","g":"input","|":0,"c":{"regex":""},"v":v[56],"va":fu.valid}), 
+new E({"i":new I("sr_CompaniaAsensores_Actualizar","381",5),"t":"Compa\u00f1ia Asensores","g":"input","|":0,"c":{"regex":""},"v":v[57],"va":fu.valid}), 
+new E({"i":new I("sr_CalleFacturacion_Actualizar","397",5),"t":"Actualizar Calle Facturacion","g":"input","|":0,"c":{"regex":""},"v":v[58],"va":fu.valid}), 
+new E({"i":new I("sr_ComplementoCalleFacturacion_Actualiza","401",5),"t":"Actualizar Complemento Calle Facturaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[59],"va":fu.valid}), 
+new E({"i":new I("sr_CasaFacturacion_Actualizar","398",5),"t":"Actualiar Casa Facturaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[60],"va":fu.valid}), 
+new E({"i":new I("sr_ApartamentoFacturacion_Actualizar","399",5),"t":"Actualizar Apartamento Facturaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[61],"va":fu.valid}), 
+new E({"i":new I("sr_CiudadFacturacion_Actualizar","400",5),"t":"Actualizar Ciudad Facturaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[62],"va":fu.valid}), 
+new E({"i":new I("sr_emailFacturacion_Actualizar","402",5),"t":"Actualizar email Facturaci\u00f3n","g":"email","|":0,"c":{"regex":""},"v":v[63],"va":function(c,self,i) { return [(this._emp(self) || this._rgx(self,".*","") || fu.invalid()),fu.valid.call(this,c,self,i)].every(function(v) {return v}); }}), 
+new E({"i":new I("sr_Administracion_Actualizar","380",5),"t":"Actualizar Adminstraci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[64],"va":fu.valid}), 
+new E({"i":new I("sr_Contacto_Actualizar","379",5),"t":"Actualizar Contacto Edificio","g":"input","|":0,"c":{"regex":""},"v":v[65],"va":fu.valid}), 
+new E({"i":new I("sr_HorariosAtencion_Actualizar","382",5),"t":"Actualizar Horarios Atencion","g":"input","|":0,"c":{"regex":""},"v":v[66],"va":fu.valid}), 
+new E({"i":new I("sr_Competencia_Actualizar","383",5),"t":"Actualizar Competencia","g":"input","|":0,"c":{"regex":""},"v":v[67],"va":fu.valid}), 
+new E({"i":new I("sr_RedDistribucion_Actualizar","393",5),"t":"Actualizar Red Distribucion","g":"input","|":0,"c":{"regex":""},"v":v[68],"va":fu.valid}), 
+new E({"i":new I("sr_Extension_Actualizar","386",5),"t":"Actualizar Extensi\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[69],"va":fu.valid}), 
+new E({"i":new I("sr_Canaletas_Actualizar","396",5),"t":"Actualizar Canaletas","g":"input","|":0,"c":{"regex":""},"v":v[70],"va":fu.valid}), 
+new E({"i":new I("sr_HomePhone_Actualizar","384",5),"t":"Actualizar Tel\u00e9fono Casa","g":"input","|":0,"c":{"regex":""},"v":v[71],"va":fu.valid}), 
+new E({"i":new I("sr_IDNodo_Actualizar","403",5),"t":"Actualizar ID Nodo","g":"input","|":0,"c":{"regex":""},"v":v[72],"va":fu.valid}), 
+new E({"i":new I("sr_TelefonoOficina_Actualizar","385",5),"t":"Actualizar Tel\u00e9fono Oficina","g":"input","|":0,"c":{"regex":""},"v":v[73],"va":fu.valid}), 
+new E({"i":new I("sr_Telefono2_Actualizar","378",5),"t":"Actualizar Telefono 2","g":"input","|":0,"c":{"regex":""},"v":v[74],"va":fu.valid}), 
+new E({"i":new I("sr_Telefono3_Actualizar","387",5),"t":"Actualizar Tercer Telef\u00f3no","g":"input","|":0,"c":{"regex":""},"v":v[75],"va":fu.valid}), 
+new E({"i":new I("sr_TelefonoPorteria_Actualizar","377",5),"t":"Actualizar Telefono Porter\u00eda","g":"input","|":0,"c":{"regex":""},"v":v[76],"va":fu.valid}), 
+new E({"i":new I("sr_CajaReliance_Actualizar","394",5),"t":"Actualizar Caja Reliance","g":"input","|":0,"c":{"regex":""},"v":v[77],"va":fu.valid}), 
+new E({"i":new I("sr_Acometida_Actualizar","395",5),"t":"Actualizar Acometida","g":"input","|":0,"c":{"regex":""},"v":v[78],"va":fu.valid}), 
+new E({"i":new I("sr_Calle_Actualizar","388",5),"t":"Actualizar Calle","g":"input","|":0,"c":{"regex":""},"v":v[79],"va":fu.valid}), 
+new E({"i":new I("sr_ComplementoCalle_Actualizar","391",5),"t":"Actualizar Complemento Calle","g":"input","|":0,"c":{"regex":""},"v":v[80],"va":fu.valid}), 
+new E({"i":new I("sr_Casa_Actualizar","389",5),"t":"Actualizar Casa","g":"input","|":0,"c":{"regex":""},"v":v[81],"va":fu.valid}), 
+new E({"i":new I("sr_Apartamento_Actualizar","390",5),"t":"Actualizar Apartamento","g":"input","|":0,"c":{"regex":""},"v":v[82],"va":fu.valid}), 
+new E({"i":new I("sr_NombreEdificio_Actualizar","392",5),"t":"Actualizar Nombre Edificio","g":"input","|":0,"c":{"regex":""},"v":v[83],"va":fu.valid}), 
+new E({"i":new I("sr_Estrato_Actualizar","459",5),"t":"Actualizar Estrato","g":"input","|":0,"c":{"regex":""},"v":v[84],"va":fu.valid}), 
+new E({"i":new I("sr_ObservacionesActualizarDatos","646",5),"t":"Observaciones","g":"input","|":0,"c":{"regex":""},"v":v[85],"va":fu.valid}), 
+new S({"i":new I("section#124275"),"t":"Aviso","g":"section","|":0,"c":{"_c":[87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107],"_bs":[]},"v":v[86],"va":fu.valid}), 
+new E({"i":new I("sr_SeviciosAfectados_Aviso","712",5),"t":"Servicios Afectados","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[87],"va":fu.valid}), 
+new E({"i":new I("sr_regional","736",5),"t":"Observaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[88],"va":fu.valid}), 
+new E({"i":new I("sr_NombreSupervisor_Aviso","711",5),"t":"Supervisor","g":"input","|":0,"c":{"regex":""},"v":v[89],"va":fu.valid}), 
+new E({"i":new I("sr_aliado","719",5),"t":"Dispositivo Externo","g":"input","|":0,"c":{"regex":""},"v":v[90],"va":fu.valid}), 
+new E({"i":new I("sr_cuentaUS","713",5),"t":"Nivel Externo RF CH2","g":"input","|":0,"c":{"regex":""},"v":v[91],"va":fu.valid}), 
+new E({"i":new I("sr_descanomal","839",5),"t":"Descripci\u00f3n de la Anomalia","g":"input","|":0,"c":{"regex":""},"v":v[92],"va":fu.valid}), 
+new E({"i":new I("sr_celsuper","714",5),"t":"Nivel Externo RF CH93","g":"input","|":0,"c":{"regex":""},"v":v[93],"va":fu.valid}), 
+new E({"i":new I("sr_dispafect","715",5),"t":"Nivel Externo RF CH115","g":"input","|":0,"c":{"regex":""},"v":v[94],"va":fu.valid}), 
+new E({"i":new I("sr_valdisp","716",5),"t":"Nivel Externo RF CH135","g":"input","|":0,"c":{"regex":""},"v":v[95],"va":fu.valid}), 
+new E({"i":new I("sr_Nivelcm","840",5),"t":"Niveles CableModem: Tx\/ Rx\/ SNR_Up\/ SNR_Dw","g":"input","|":0,"c":{"regex":""},"v":v[96],"va":fu.valid}), 
+new E({"i":new I("sr_SNRUP_DW_CPE_Aviso","841",5),"t":"SNR UP-DW CPE","g":"number","|":0,"c":{"regex":""},"v":v[97],"va":fu.valid}), 
+new E({"i":new I("sr_OsciladorExterno_Aviso","842",5),"t":"Oscilador Externo","g":"input","|":0,"c":{"regex":""},"v":v[98],"va":fu.valid}), 
+new E({"i":new I("sr_hora_y_period","843",5),"t":"Hora y periodicidad de la afectaci\u00f3n: Horario Ma\u00f1ana\/Tarde\/Noche\/Todo el dia\/hora especifica","g":"input","|":0,"c":{"regex":""},"v":v[99],"va":fu.valid}), 
+new E({"i":new I("sr_NivelRF","844",5),"t":"Niveles RF BC Y NC: CH 18\/19\/20\/7\/30\/45\/47\/61\/63\/67\/68\/69\/\/71\/82\/90\/92\/93\/115\/123\/124","g":"input","|":0,"c":{"regex":""},"v":v[100],"va":fu.valid}), 
+new E({"i":new I("sr_Prmcalidad","717",5),"t":"TV MER","g":"input","|":0,"c":{"regex":""},"v":v[101],"va":fu.valid}), 
+new E({"i":new I("sr_otrochfalla","718",5),"t":"TV BER","g":"input","|":0,"c":{"regex":""},"v":v[102],"va":fu.valid}), 
+new E({"i":new I("sr_TelDestino_Aviso","845",5),"t":"Tel Destino","g":"input","|":0,"c":{"regex":""},"v":v[103],"va":fu.valid}), 
+new E({"i":new I("sr_CPEFALLA_Aviso","846",5),"t":"CPE FALLA","g":"input","|":0,"c":{"regex":""},"v":v[104],"va":fu.valid}), 
+new E({"i":new I("sr_Problema_Aviso","847",5),"t":"Problema","g":"input","|":0,"c":{"regex":""},"v":v[105],"va":fu.valid}), 
+new E({"i":new I("sr_IP_Aviso","848",5),"t":"IP","g":"input","|":0,"c":{"regex":""},"v":v[106],"va":fu.valid}), 
+new E({"i":new I("sr_Voz_Aviso","849",5),"t":"Voz","g":"input","|":0,"c":{"regex":""},"v":v[107],"va":fu.valid}), 
+new S({"i":new I("section#124298"),"t":"Lista de Chequeo","g":"section","|":0,"c":{"_c":[109,111,113,115,117,119,121,123,125,127],"_bs":[]},"v":v[108],"va":fu.valid}), 
+new S({"i":new I("section#124299"),"t":"1. Me encuentro en buenas condiciones de salud?","g":"section","|":0,"c":{"_c":[110],"_bs":[]},"v":v[109],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ1","875",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[110],"va":fu.valid}), 
+new S({"i":new I("section#124301"),"t":"2. Estoy certificado en alturas?","g":"section","|":0,"c":{"_c":[112],"_bs":[]},"v":v[111],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ2","872",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "Y"],function(c,self,i) { return !this.__empty(c.e5["875"]); })],"titles":[]},"v":v[112],"va":fu.valid}), 
+new S({"i":new I("section#124303"),"t":"3. Identifiqu\u00e9 y control\u00e9 riesgos?","g":"section","|":0,"c":{"_c":[114],"_bs":[]},"v":v[113],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ3","879",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "Y"],function(c,self,i) { return !this.__empty(c.e5["872"]); })],"titles":[]},"v":v[114],"va":fu.valid}), 
+new S({"i":new I("section#124305"),"t":"4. Los EPP est\u00e1n en condiciones seguras para su uso?","g":"section","|":0,"c":{"_c":[116],"_bs":[]},"v":v[115],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ4","874",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "Y"],function(c,self,i) { return !this.__empty(c.e5["879"]); })],"titles":[]},"v":v[116],"va":fu.valid}), 
+new S({"i":new I("section#124307"),"t":"5. Las condiciones atmosf\u00e9ricas son seguras?","g":"section","|":0,"c":{"_c":[118],"_bs":[]},"v":v[117],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ5","873",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "Y"],function(c,self,i) { return !this.__empty(c.e5["874"]); })],"titles":[]},"v":v[118],"va":fu.valid}), 
+new S({"i":new I("section#124309"),"t":"6. El \u00e1rea de trabajo y su estructura son seguras?","g":"section","|":0,"c":{"_c":[120],"_bs":[]},"v":v[119],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ6","870",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "Y"],function(c,self,i) { return !this.__empty(c.e5["873"]); })],"titles":[]},"v":v[120],"va":fu.valid}), 
+new S({"i":new I("section#124311"),"t":"7. Las herramientas y equipos de trabajo son seguros?","g":"section","|":0,"c":{"_c":[122],"_bs":[]},"v":v[121],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ7","877",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "Y"],function(c,self,i) { return !this.__empty(c.e5["870"]); })],"titles":[]},"v":v[122],"va":fu.valid}), 
+new S({"i":new I("section#124313"),"t":"8. Demarqu\u00e9 y se\u00f1alic\u00e9 el \u00e1rea de trabajo?","g":"section","|":0,"c":{"_c":[124],"_bs":[]},"v":v[123],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ8","876",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "S"],function(c,self,i) { return !this.__empty(c.e5["877"]); })],"titles":[]},"v":v[124],"va":fu.valid}), 
+new S({"i":new I("section#124315"),"t":"9. Asegur\u00e9 herramientas y equipos?","g":"section","|":0,"c":{"_c":[126],"_bs":[]},"v":v[125],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ9","871",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "Y"],function(c,self,i) { return !this.__empty(c.e5["876"]); })],"titles":[]},"v":v[126],"va":fu.valid}), 
+new S({"i":new I("section#124317"),"t":"10. Identifiqu\u00e9 redes el\u00e9ctricas y distancias seguras?","g":"section","|":0,"c":{"_c":[128],"_bs":[]},"v":v[127],"va":fu.valid}), 
+new E({"i":new I("XSR_TAQ10","878",5),"t":"Respuesta","g":"radiogroup","|":0,"c":{"enum":[new V(["N", "Y"],function(c,self,i) { return !this.__empty(c.e5["871"]); })],"titles":[]},"v":v[128],"va":fu.valid}), 
+new S({"i":new I("wrapperColumnManager0"),"g":"section_column_manager","|":0,"c":{"_c":[0,86,108],"_bs":[]},"v":v[129],"va":fu.valid}), 
+new E({"i":new I("restore_draft-17","",1000),"t":"Restaurar borrador","g":"restore_draft","|":0,"c":{"additionLabel":"Guardado a las {TIME}"},"v":v[130],"va":fu.valid,"p":0})
+        ],
+        title: "Acciones",
+        label: "mobile_activity_request#2#",
+        formId: "17",
+        version: "3",  
+        content: [130,129],
+        actions: [],
+        topology: new app.form.GraphTopology([130,1,89,88,87,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,8,9,7,6,5,3,110,112,114,116,118,120,122,124,126,128,127,125,123,121,119,117,115,113,111,109,108,4,2,0,129], [null,[129,128,105,127,103,102,100,101,99,98,97,96,95,93,92,91,90,89,88,87,86,85,84,83,82,81,80,79,78,77,76,75,74,73,71,70,69,68,67,65,64,63,62,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,4,3,2,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,130],[23,130],[23,130],[23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[23,130],[130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,130],[129,61,130],[129,61,130],[129,61,130],[129,61,130],[129,130],[129,66,130],[129,66,130],[129,66,130],[129,66,130],[129,130],[129,72,130],[129,72,130],[129,72,130],[129,72,130],[129,72,130],[129,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,94,130],[129,130],[129,104,130],[129,104,130],[129,104,130],[129,104,130],[129,104,130],[129,104,101,130],[129,104,130],[129,104,130],[129,104,130],[129,130],[129,127,106,107,108,109,110,111,112,113,114,115,130],[126,125,107,130],[126,124,108,130],[126,123,109,130],[126,122,110,130],[126,121,111,130],[126,120,112,130],[126,119,113,130],[126,118,114,130],[126,117,115,130],[126,116,130],[126,130],[126,130],[126,130],[126,130],[126,130],[126,130],[126,130],[126,130],[126,130],[126,130],[130],[129,130],[129,130],[130],null]),
+        isSubmittable: function(c,self,i) { return 0 || !(((c.pc || []).indexOf(true) !== -1) || 0); },
+        showLinks: fu.links,
+        showSubmitLine: fu.subline
+    };
+    app.getFormCollection().register(new app.form.Form(d));
+    
+    
+} catch (error) {
+    console && console.error(error);
+    app.getFormCollection().logError(error);
+}
+})(app,app.form.Identity,app.form.FormElement,app.form.FormSection,app.form.enumeration.Visibility,app.form.enumeration.KeyVisibility,app.form.enumeration.Title);
+(function (app, I, EE, E, EB, EM, O, OX, G) {
+    ([]).forEach(function (r, e) {
+        try {
+            r.registerEnumeration(e, "mobile_activity_request");
+        } catch (error) {
+            console && console.error(error);
+            r.logError(error);
+        }            
+    }.bind(null, app.getFormCollection()));
+})(app, app.form.Identity, app.form.enumeration.EnumerationWithEmptyValue,app.form.enumeration.Enumeration,app.form.enumeration.BitEnumeration, app.form.enumeration.EnumerationWithMultipleValues, app.form.enumeration.Option,app.form.enumeration.InactiveOption,app.form.enumeration.Group);

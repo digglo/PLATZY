@@ -1,0 +1,82 @@
+define(['ojs/ojcore',
+        'knockout',
+        'jquery',
+        'appComponents',
+        'utils/Glossary',
+        'utils/PageLabels',
+        'ojs/ojknockout',
+        'ojs/ojmodule',
+        'ojs/ojbutton'
+    ],
+    /**
+     * @param {oj} oj
+     * @param ko
+     * @param {jQuery} jQuery
+     * @param appComp
+     * @param glossary
+     * @param pageLabels
+     * @returns {app}
+     */
+    function (oj, ko, jQuery, appComp, glossary, pageLabels) {
+        /**
+         * @constructor
+         */
+        function app() {
+            if (!document.getElementById('content-jet')) return;
+            console.debug("App ojModule init");
+            var self = this;
+
+            var utils = {
+                appComponents: appComp(),
+                app: this
+            };
+
+            self.params = {
+                jetModule: ko.observable(),
+                isloaded: ko.observable(false),
+                viewChanged: ko.observable(false),
+                selector: '#content-jet'
+            };
+
+            if (typeof _DATA === "object" && _DATA.is_mobility_app) {
+                oj.ModuleBinding.defaults.modelPath = 'lib/oracle_jet/js/modules/';
+                oj.ModuleBinding.defaults.viewPath = 'text!lib/oracle_jet/templates/';
+                oj.ModuleBinding.defaults.viewSuffix = '.tmpl.html';
+                if (typeof jbfApp !== 'undefined') {
+                    this.params = jbfApp.jetParams;
+                }
+            } else {
+                oj.ModuleBinding.defaults.modelPath = 'modules/';
+                oj.ModuleBinding.defaults.viewPath = 'text!../templates/';
+                oj.ModuleBinding.defaults.viewSuffix = '.tmpl.html';
+            }
+
+            // To change document title and menu selection state
+            self.viewChanged = ko.computed(function () {
+                if (self.params.jetModule() && !_DATA.is_mobility_app) {
+                    document.title = self.params.jetModule().title + " - " + glossary({id: 1668});/* Oracle Field Service Cloud*/
+                    jQuery('.toa-mainMenu, .menuItem, .toa-menu-tab').removeClass('selected');
+                    jQuery('.menuItem[label="' + self.params.jetModule().label + '"]').addClass('selected jet_selected');
+
+                    var _contextItem = pageLabels().findItem(self.params.jetModule().label);
+
+                    if (_contextItem) {
+                        self._parentItem = _contextItem.parent || _contextItem.label;
+                        jQuery('.toa-mainMenu .tab' + self._parentItem).addClass('selected jet_selected');
+                    }
+
+                    jQuery('.toa-mainMenu .tab' + self.params.jetModule().label).addClass('selected');
+                    jQuery('#main-vertical-menu .toa-menu-tab[label="' + self.params.jetModule().label + '"]').addClass('selected');
+                }
+                return self.params.viewChanged();
+            }, self);
+
+            console.debug('ko.applyBindings to:' + self.params.selector);
+            ko.applyBindings(utils, document.querySelector(self.params.selector));
+
+            return self.params;
+        }
+
+        return new app();
+    }
+);

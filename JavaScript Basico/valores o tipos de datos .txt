@@ -1,8 +1,0 @@
-TIPOS DE VALOREA:
--Numeros = 1,2 
--Texto = ""
--booleano = true o false
--Array= []
--Objeto = {}
-NULL: valores vacios
-UNDEFINED: valores vacios

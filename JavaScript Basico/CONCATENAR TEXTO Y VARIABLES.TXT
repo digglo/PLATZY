@@ -1,4 +1,0 @@
-CONCATENAR VARIABLES
-
-EJEMPLO:
-console.log("Hols ${let estudiante}");

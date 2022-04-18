@@ -1,0 +1,76 @@
+(function (app,I,E,S,A,V,ET) {
+try {
+    var fu = {
+subline:function(c,self,i) { return true; },
+links:function(c) { return !c.e1000.isWritable; },
+check:function(c,e,k) { if (this._emp(c["e"+e] && c["e"+e][k])) throw new app.form.exceptions.EntityIsNotAllowed(e); },
+invalid:function(c,self,i) { throw new app.form.exceptions.ValidationError; },
+valid:function(c,self,i) { return c.m[i] && this._emp(self) ? fu.invalid() : true; },
+screenV:function(c,indexes) { return Object.keys(indexes).some(function (i) { return v[i]&& v[i].call(this, c, this._s(indexes[i]), i) > 0; }, this); },
+sectionV:function(c,indexes) { return indexes.some(function (i) { return c.v[i]; }, this); },
+childV:function(c,indexes) { return indexes.every(function (i) { return c.v[i]; }, this); },
+hideRO:function(self,v) { return this._emp(self) ? 0 : v; }
+    };
+    var v = [/*0*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,2,3,4,5,6,7,8,9,10,11,12,13])) return 0;
+return 2; },/*1*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (!(this.__in(c.e1["aworktype"], '113','115','204') || this.__in(c.e1._("aworktype").groupId, '113','115','204'))) return fu.hideRO.call(this,self,1);
+return -1; },/*2*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if ((this.__in(c.e1["aworktype"], '-1') || this.__in(c.e1._("aworktype").groupId, '-1'))) return fu.hideRO.call(this,self,1);
+return -1; },/*3*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*4*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*5*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[5] === 0 || !c.f.enum(d.elements[5]).call(this,c,self,i)) return 0;return fu.hideRO.call(this,self,1); },/*6*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[6] === 0 || !c.f.enum(d.elements[6]).call(this,c,self,i)) return 0;return fu.hideRO.call(this,self,1); },/*7*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (!(this.__in(c.e1["aworktype"], '113','115','204') || this.__in(c.e1._("aworktype").groupId, '113','115','204'))) return fu.hideRO.call(this,self,1);
+return -1; },/*8*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*9*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if ((this.__in(c.e1["aworktype"], '113','115','204') || this.__in(c.e1._("aworktype").groupId, '113','115','204'))) return fu.hideRO.call(this,self,1);
+return -1; },/*10*/function(c,self,i) { fu.check.call(this,c,1,"aid"); if (c.n[10] === 0 || !c.f.enum(d.elements[10]).call(this,c,self,i)) return 0;return fu.hideRO.call(this,self,1); },/*11*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*12*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*13*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*14*/function(c,self,i) { if (!fu.sectionV.call(this,c,[15,16,17,18,19])) return 0;
+return 2; },/*15*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return 2; },/*16*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*17*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return fu.hideRO.call(this,self,1); },/*18*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return 2; },/*19*/function(c,self,i) { fu.check.call(this,c,1,"aid"); return 2; },/*20*/function(c,self,i) { if (!fu.sectionV.call(this,c,[1,2,3,4,5,6,7,8,9,10,11,12,13,0,15,16,17,18,19,14])) return 0;
+return 1; },/*21*/function(c,self,i) { if ((!this._emp(self))) return fu.hideRO.call(this,self,1);
+return 0; }];
+    var d = {
+        elements: [
+new S({"i":new I("section#element_2"),"t":"Informaci\u00f3n Actividad","g":"section","|":0,"c":{"_c":[1,2,3,4,5,6,7,8,9,10,11,12,13],"_bs":[]},"v":v[0],"va":fu.valid}), 
+new E({"i":new I("XA_NombreCompleto","720",1),"t":"Suscriptor","g":"input","|":0,"c":{"regex":""},"v":v[1],"va":fu.valid}), 
+new E({"i":new I("XA_Prioridad","184",1),"t":"Priorizaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[2],"va":fu.valid}), 
+new E({"i":new I("caddress","",1),"t":"Direcci\u00f3n Instalaci\u00f3n","g":"input","|":0,"c":{"regex":""},"v":v[3],"va":fu.valid}), 
+new E({"i":new I("ccity","",1),"t":"Ciudad","g":"input","|":0,"c":{"regex":""},"v":v[4],"va":fu.valid}), 
+new E({"i":new I("aworktype","",1),"t":"Tipo de Actividad","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[5],"va":fu.valid}), 
+new E({"i":new I("XA_WorkOrderSubtype","158",1),"t":"Suntipo T","g":"dropdown","|":0,"c":{"enum":[new A()],"titles":[]},"v":v[6],"va":fu.valid}), 
+new E({"i":new I("customer_number","",1),"t":"Cuenta No.","g":"input","|":0,"c":{"regex":""},"v":v[7],"va":fu.valid}), 
+new E({"i":new I("XA_Atencion_Inmediata_Agenda","2861",1),"t":"Agenda Inmediata","g":"checkbox","|":0,"v":v[8],"va":fu.valid}), 
+new E({"i":new I("appt_number","",1),"t":"OT No.","g":"input","|":0,"c":{"regex":"","maxlength":40},"v":v[9],"va":fu.valid}), 
+new E({"i":new I("astatus","",1),"t":"Estado","g":"dropdown","|":0,"c":{"regex":""},"v":v[10],"x":function(c,self,i) { return 1; },"va":fu.valid}), 
+new E({"i":new I("TAP_nombretecnico","1265",1),"t":"Nombres y Apellidos (Tecnico)","g":"input","|":0,"c":{"regex":""},"v":v[11],"va":fu.valid}), 
+new E({"i":new I("TAP_Aliado","1266",1),"t":"Aliado","g":"input","|":0,"c":{"regex":""},"v":v[12],"va":fu.valid}), 
+new E({"i":new I("TAP_Nodo","1267",1),"t":"Nodo","g":"input","|":0,"c":{"regex":""},"v":v[13],"va":fu.valid}), 
+new S({"i":new I("section#element_16"),"t":"Equipos Medici\u00f3n","g":"section","|":0,"c":{"_c":[15,16,17,18,19],"_bs":[]},"v":v[14],"va":fu.valid}), 
+new E({"i":new I("XA_EstadoEquipoMedicion","3932",1),"t":"Estado Equipo Medicion","g":"input","|":0,"c":{"regex":""},"v":v[15],"va":fu.valid}), 
+new E({"i":new I("XA_ResumenMedidas_EM","3919",1),"t":"Resumen Medidas","g":"xslt","|":0,"v":v[16],"va":fu.valid}), 
+new E({"i":new I("XA_ResumenMedidas_FO","5154",1),"t":"Resumen Medidas FO","g":"xslt","|":0,"v":v[17],"va":fu.valid}), 
+new E({"i":new I("XA_SoftClose_EM","3920",1),"t":"SoftClose Equipo Medicion","g":"checkbox","|":0,"v":v[18],"va":fu.valid}), 
+new E({"i":new I("XA_ArchivoMedidas_EM","3921",1),"t":"Archivo Detalle Medidas","g":"file","|":0,"c":{"mime_types":["text\/plain","application\/vnd.ms-excel","text\/csv","text\/css"],"file_size_limit":"5"},"v":v[19],"va":fu.valid}), 
+new S({"i":new I("wrapperColumnManager0"),"g":"section_column_manager","|":0,"c":{"_c":[0,14],"_bs":[]},"v":v[20],"va":fu.valid}), 
+new E({"i":new I("restore_draft-199","",1000),"t":"Restaurar borrador","g":"restore_draft","|":0,"c":{"additionLabel":"Guardado a las {TIME}"},"v":v[21],"va":fu.valid,"p":0})
+        ],
+        title: "Activity Equipos Medici\u00f3n",
+        label: "Activity_Equipos_Medici\u00f3n",
+        formId: "199",
+        version: "2",  
+        content: [21,20],
+        actions: [],
+        topology: new app.form.GraphTopology([21,19,18,17,16,15,14,13,12,11,10,8,6,5,9,7,2,1,4,3,0,20], [null,[6,21],[6,21],[6,21],[6,21],[6,21],[21],[20,21],[20,21],[20,21],[20,21],[20,21],[20,21],[20,17,16,15,14,21],[20,21],[20,21],[20,21],[20,21],[20,21],[20,21],[21],null]),
+        isSubmittable: function(c,self,i) { return 0 || !(((c.pc || []).indexOf(true) !== -1) || 0); },
+        showLinks: fu.links,
+        showSubmitLine: fu.subline
+    };
+    app.getFormCollection().register(new app.form.Form(d));
+    
+    
+} catch (error) {
+    console && console.error(error);
+    app.getFormCollection().logError(error);
+}
+})(app,app.form.Identity,app.form.FormElement,app.form.FormSection,app.form.enumeration.Visibility,app.form.enumeration.KeyVisibility,app.form.enumeration.Title);
+(function (app, I, EE, E, EB, EM, O, OX, G) {
+    ([]).forEach(function (r, e) {
+        try {
+            r.registerEnumeration(e, "Activity_Equipos_Medici\u00f3n");
+        } catch (error) {
+            console && console.error(error);
+            r.logError(error);
+        }            
+    }.bind(null, app.getFormCollection()));
+})(app, app.form.Identity, app.form.enumeration.EnumerationWithEmptyValue,app.form.enumeration.Enumeration,app.form.enumeration.BitEnumeration, app.form.enumeration.EnumerationWithMultipleValues, app.form.enumeration.Option,app.form.enumeration.InactiveOption,app.form.enumeration.Group);

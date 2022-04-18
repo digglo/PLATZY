@@ -1,8 +1,0 @@
-El método .push() nos permite agregar uno o más elementos al final de un array.
-
-A continuación veremos un ejemplo aplicado con un array que contiene números:
-
-Como podemos ver, agregamos dos cadenas de strings al ejecutar la función donde tenemos txtArray.push(). 
-Es decir, indico el array al que voy agregar elementos, uso el método .push(), y dentro de .push() indico
-los elementos que quiero agregar al string. Finalmente, el console.log() lo uso para revisar en la
-consola si esto sucedió o no.

@@ -1,9 +1,0 @@
-ESTRUCTURA
-for(let i =0;i>=10;i++){
-
-}
-
-for (let f of fg){
-
-
-}

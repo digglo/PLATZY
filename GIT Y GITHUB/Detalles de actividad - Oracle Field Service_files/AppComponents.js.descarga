@@ -1,0 +1,87 @@
+define(['ojs/ojcore' ,'knockout','jquery','utils/Glossary','ojs/ojknockout','ojs/ojtree'
+   ],
+    /**
+     * @param oj
+     * @param ko
+     * @param jQuery
+     * @param {toa.glossary} glossary
+     * @return {appComponent}
+     */
+    function(oj, ko, jQuery, glossary) {
+
+            function appComponent() {
+                var resourceTreeFolder, forecastingPanelFolder, calendarFolder;
+                if(typeof _DATA ==="object" && _DATA.is_mobility_app) {
+                    resourceTreeFolder = 'lib/oracle_jet/components/resourceTree/ResourceTree';
+                    forecastingPanelFolder = 'lib/oracle_jet/components/forecastingpanel/ForecastingPanel';
+                    calendarFolder = 'lib/oracle_jet/components/calendar/Calendar';
+                } else {
+                    resourceTreeFolder = 'components/resourceTree/ResourceTree';
+                    forecastingPanelFolder = 'components/forecastingpanel/ForecastingPanel';
+                    calendarFolder = 'components/calendar/Calendar';
+                }
+
+                // Resource tree component
+                ko.components.register('resource-tree', {
+                    viewModel: {require: resourceTreeFolder},
+                    template: {require: 'text!' + resourceTreeFolder + '.tmpl.html'}
+                });
+
+                // Forecasting panel - Calender and filter buttons
+                ko.components.register('forecasting-panel', {
+                    viewModel: {require: forecastingPanelFolder},
+                    template: {require: 'text!' + forecastingPanelFolder + '.tmpl.html'}
+                });
+
+                // Calender component
+                ko.components.register('calendar',{
+                    viewModel : {require : calendarFolder},
+                    template: {require: 'text!' + calendarFolder + '.tmpl.html'}
+                });
+
+                ko.bindingHandlers.glossary = {
+                    init: function(element, valueAccessor, allBindings, viewModel, bindingContext) {
+                        var value = ko.unwrap(valueAccessor());
+                        var id = null;
+                        var translations = {};
+                        if (typeof value === 'number') {
+                            id = value;
+                        } else if (value !== null && typeof value === 'object') {
+                            id = value['id'];
+                            translations = value['translations'];
+                        }
+
+                        ko.virtualElements.emptyNode(element);
+                        ko.virtualElements.prepend(
+                            element,
+                            document.createTextNode(glossary(
+                                {
+                                    id: id,
+                                    translations: translations,
+                                    type: 'raw'
+                                }
+                            ))
+                        );
+                    },
+                    update: function(element, valueAccessor, allBindings, viewModel, bindingContext) {
+                        // Do nothing, for now.
+                    }
+                };
+                ko.virtualElements.allowedBindings.glossary = true;
+
+                ko.bindingHandlers.fadeVisible = {
+                    init: function(element, valueAccessor) {
+                        // Initially set the element to be instantly visible/hidden depending on the value
+                        var value = valueAccessor();
+                        $(element).toggle(ko.unwrap(value)); // Use "unwrapObservable" so we can handle values that may or may not be observable
+                    },
+                    update: function(element, valueAccessor) {
+                        // Whenever the value subsequently changes, slowly fade the element in or out
+                        var value = valueAccessor();
+                        ko.unwrap(value) ? $(element).fadeIn() : $(element).fadeOut();
+                    }
+                };
+            }
+
+   return appComponent;
+});
