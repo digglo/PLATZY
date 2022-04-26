@@ -1,0 +1,16 @@
+{
+  "name": "asyncronismo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "QUE ES ASINCRONISMO.js",
+  "scripts": {
+    "async": "nose src/ASYNC/asyncYAwait.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
+
